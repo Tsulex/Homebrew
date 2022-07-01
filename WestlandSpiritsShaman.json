@@ -1,0 +1,958 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Westerland Spirit Shaman",
+				"abbreviation": "WS",
+				"full": "Westerland Spirit Shaman",
+				"authors": [
+					"Tsulex"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.1.2"
+			}
+		],
+		"dateAdded": 1533205140,
+		"dateLastModified": 1533205140
+	},
+	"class": [
+		{
+			"name": "Shaman",
+			"source": "WS",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"str",
+				"wis"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "pact",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				1,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				6,
+				6,
+				6,
+				7,
+				7
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"simple",
+					"{@item greatclub|phb}"
+				],
+				"armor":[
+					"light",
+					"medium",
+					"{@item shield|phb}"
+				],
+				"tools":[
+					"{@item herbalism kit|phb}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"animal handling",
+								"athletics",
+								"insight",
+								"medicine",
+								"nature",
+								"perception",
+								"religion",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"a tomahawk and a {@filter simple weapon|items|source=phb|category=basic|type=simple weapon} or {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}",
+					"a {@item longbow|phb} and 20 {@item arrow|phb|arrows}",
+					"a {@item hide armor|phb} or a duster",
+					"an {@item explorer's pack|phb}",
+					"a {@item druid focus|phb|shaman focus}"
+				],
+				"defaultData": [
+					{
+						"_": [
+							"tomahawk"
+						],
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"_": [
+							"longbow|phb",
+							{
+								"item": "arrow|phb",
+								"quantity": 20
+							}
+						]
+					},
+					{
+						"a": [
+							"hide armor|phb"
+						],
+						"b": [
+							"duster"
+						]
+					},
+					{
+						"_": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"shaman focus"
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Shaman}",
+						"Spell Slots",
+						"Slot Level"
+					],
+					"rows": [
+						[
+							2,
+							1,
+							"{@filter 1st|spells|level=1|class=Shaman}"
+						],
+						[
+							2,
+							2,
+							"{@filter 1st|spells|level=1|class=Shaman}"
+						],
+						[
+							2,
+							2,
+							"{@filter 2nd|spells|level=2|class=Shaman}"
+						],
+						[
+							3,
+							2,
+							"{@filter 2nd|spells|level=2|class=Shaman}"
+						],
+						[
+							3,
+							3,
+							"{@filter 3rd|spells|level=3|class=Shaman}"
+						],
+						[
+							3,
+							3,
+							"{@filter 3rd|spells|level=3|class=Shaman}"
+						],
+						[
+							3,
+							3,
+							"{@filter 4th|spells|level=4|class=Shaman}"
+						],
+						[
+							3,
+							3,
+							"{@filter 4th|spells|level=4|class=Shaman}"
+						],
+						[
+							3,
+							4,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							4,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							4,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							4,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							5,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							5,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							5,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							6,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							6,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							6,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							7,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						],
+						[
+							4,
+							7,
+							"{@filter 5th|spells|level=5|class=Shaman}"
+						]
+					]
+				}
+			],
+			"classSpells": [
+				"Control Flames|XGE",
+				"Create Bonfire|XGE",
+				"Druidcraft",
+				"Frostbite|XGE",
+				"Guidance",
+				"Gust|XGE",
+				"Infestation|XGE",
+				"Lightning Lure|TCE",
+				"Magic Stone|XGE",
+				"Mending",
+				"Mold Earth|XGE",
+				"Poison Spray",
+				"Primal Savagery|XGE",
+				"Produce Flame",
+				"Resistance",
+				"Shape Water|XGE",
+				"Shillelagh",
+				"Shocking Grasp",
+				"Thunderclap|XGE",
+				"Toll the Dead|XGE",
+				"Absorb Elements|XGE",
+				"Animal Friendship",
+				"Beast Bond|XGE",
+				"Charm Person",
+				"Create or Destroy Water",
+				"Cure Wounds",
+				"Detect Magic",
+				"Detect Poison and Disease",
+				"Earth Tremor|XGE",
+				"Entangle",
+				"Ensnaring Strike",
+				"Faerie Fire",
+				"Fog Cloud",
+				"Goodberry",
+				"Hail of Thorns",
+				"Healing Word",
+				"Hunter's Mark",
+				"Ice Knife|XGE",
+				"Jump",
+				"Longstrider",
+				"Purify Food and Drink",
+				"Snare|XGE",
+				"Speak with Animals",
+				"Thunderwave",
+				"Zephyr Strike|XGE",
+				"Animal Messenger",
+				"Barkskin",
+				"Cordon of Arrows",
+				"Darkvision",
+				"Dust Devil|XGE",
+				"Earthbind|XGE",
+				"Enhance Ability",
+				"Find Traps",
+				"Flame Blade",
+				"Flaming Sphere",
+				"Gust of Wind",
+				"Healing Spirit|XGE",
+				"Heat Metal",
+				"Hold Person",
+				"Lesser Restoration",
+				"Locate Object",
+				"Moonbeam",
+				"Pass without Trace",
+				"Protection from Poison",
+				"Silence",
+				"Skywrite|XGE",
+				"Spider Climb",
+				"Spike Growth",
+				"Warding Wind|XGE",
+				"Call Lightning",
+				"Conjure Animals",
+				"Conjure Barrage",
+				"Daylight",
+				"Dispel Magic",
+				"Erupting Earth|XGE",
+				"Flame Arrows|XGE",
+				"Lightning Arrow",
+				"Melf's Minute Meteors",
+				"Nondetection",
+				"Plant Growth",
+				"Protection from Energy",
+				"Sleet Storm",
+				"Speak with Plants",
+				"Spirit Shroud|TCE",
+				"Summon Fey|TCE",
+				"Tidal Wave|XGE",
+				"Wall of Water|XGE",
+				"Water Breathing",
+				"Water Walk",
+				"Wind Wall",
+				"Blight",
+				"Charm Monster|XGE",
+				"Confusion",
+				"Conjure Minor Elementals",
+				"Conjure Woodland Beings",
+				"Control Water",
+				"Dominate Beast",
+				"Elemental Bane|XGE",
+				"Freedom of Movement",
+				"Giant Insect",
+				"Guardian of Nature|XGE",
+				"Hallucinatory Terrain",
+				"Ice Storm",
+				"Locate Creature",
+				"Polymorph",
+				"Stone Shape",
+				"Stoneskin",
+				"Summon Elemental|TCE",
+				"Wall of Fire",
+				"Watery Sphere|XGE",
+				"Animate Objects",
+				"Antilife Shell",
+				"Awaken",
+				"Commune with Nature",
+				"Conjure Elemental",
+				"Conjure Volley",
+				"Contagion",
+				"Control Winds|XGE",
+				"Geas",
+				"Greater Restoration",
+				"Insect Plague",
+				"Maelstrom|XGE",
+				"Mass Cure Wounds",
+				"Planar Binding",
+				"Reincarnate",
+				"Scrying",
+				"Swift Quiver",
+				"Transmute Rock|XGE",
+				"Tree Stride",
+				"Wall of Stone",
+				"Wrath of Nature|XGE",
+				"Bones of the Earth|XGE",
+				"Conjure Fey",
+				"Druid Grove|XGE",
+				"Find the Path",
+				"Heal",
+				"Heroes' Feast",
+				"Investiture of Flame|XGE",
+				"Investiture of Ice|XGE",
+				"Investiture of Stone|XGE",
+				"Investiture of Wind|XGE",
+				"Move Earth",
+				"Primordial Ward|XGE",
+				"Soul Cage|XGE",
+				"Sunbeam",
+				"Transport via Plants",
+				"Wall of Thorns",
+				"Wind Walk",
+				"Fire Storm",
+				"Mirage Arcane",
+				"Plane Shift",
+				"Regenerate",
+				"Reverse Gravity",
+				"Whirlwind|XGE",
+				"Animal Shapes",
+				"Antipathy/Sympathy",
+				"Control Weather",
+				"Earthquake",
+				"Feeblemind",
+				"Sunburst",
+				"Foresight",
+				"Shapechange",
+				"Storm of Vengeance",
+				"True Resurrection"
+			],
+			"classFeatures": [
+				"Spellcasting|Shaman|WS|1",
+				"Spirit Companion|Shaman|WS|1",
+				{
+					"classFeature": "Shamanic Path Feature|Shaman|WS|1",
+					"gainSubclassFeature": true
+				},
+				"Healing Touch|Shaman|WS|2",
+				"Ability Score Improvement|Shaman|WS|4",
+				{
+					"classFeature": "Shamanic Path Feature|Shaman|WS|6",
+					"gainSubclassFeature": true
+				},
+				"Spirit Companion (2)|Shaman|WS|7",
+				"Ability Score Improvement|Shaman|WS|8",
+				"Land’s Stride|Shaman|WS|10",
+				"Shamanic Mysticism (6th level)|Shaman|WS|11",
+				{
+					"classFeature": "Shamanic Path Feature|Shaman|WS|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Shaman|WS|12",
+				"Shamanic Mysticism (7th level)|Shaman|WS|13",
+				"Spirit Companion (3)|Shaman|WS|14",
+				"Shamanic Mysticism (8th level)|Shaman|WS|15",
+				"Ability Score Improvement|Shaman|WS|16",
+				"Shamanic Mysticism (9th level)|Shaman|WS|17",
+				{
+					"classFeature": "Shamanic Path Feature|Shaman|WS|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Shaman|WS|19",
+				"Immortal Body|Shaman|WS|20"
+			],
+			"subclassTitle": "SP",
+			"fluff": [
+				{
+					"name": "Shaman",
+					"type": "section",
+					"entries": [
+						"Some people run themselves insane trying to forget their pasts. But Shamans revel in their pasts, both the past that they have experienced and the past of those that came before them. They draw their magic from the influential spirits that are tied to them. Be it their ancestors, or a creature that represents what the Shaman stands for, Shamans rely heavily on the support of the past. They have a rapport with all things living and the spirits that they represent. Shamans are able to communicate with their spiritual companions in order to harness their focus, to speak with others’ spirits (be them living, dead, or otherwise), or to relive spiritual events related to objects or locations. For Shamans, death is only a stage in the greater scheme of life. A Shaman’s spiritualism can be relative to a specific spirit or to life as a whole: these are denoted by the Animism and Totemism spiritual pathways.",
+						"Animists are able to wield the dormant spiritual energies within any environment that they encounter. They are able to draw from the spiritual planes in order to fuel their spellcasting ability, though drawing these energies comes at a cost to their own spiritual stability. Animists are also able to channel the energies of the spiritual planes through them. In this channeling, they are able to emit these spiritual energies to protect themselves and their companions. Some skilled Animists are even able to temporarily enter or send others to the spiritual planes.",
+						"Totemists channel the influence of specific animal spirits in order to physically represent the traits of those spirits. Those who channel the bear are given strength and are made more resilient to physical damage by their bear spirits. Those who channel the wolf are made more hearty and pact-like by their wolf spirits. Those who channel the eagle are made more swift, agile, and dexterous by their eagle spirits. While a Totemist’s spirit animal is not required to be a bear, eagle, or wolf, it should represent similar traits to one of the three."
+					],
+					"source": "WS"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Animism",
+			"shortName": "Animism",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Unyielding Magic|Shaman|WS|Animism|WS|1",
+				"Spiritual Warding|Shaman|WS|Animism|WS|6",
+				"Twilight State|Shaman|WS|Animism|WS|11",
+				"Primal Spirit|Shaman|WS|Animism|WS|18"
+			]
+		},
+		{
+			"name": "Totemism",
+			"shortName": "Totemism",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Spiritual Path|Shaman|WS|Totemism|WS|1",
+				"Extra Attack|Shaman|WS|Totemism|WS|6",
+				"Animalistic Ferocity|Shaman|WS|Totemism|WS|11",
+				"Primal Power|Shaman|WS|Totemism|WS|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Spellcasting",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will. See chapter 10 of the PHB for the general rules of spellcasting and chapter 5 of this document for the Shaman spell list.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"You know two cantrips of your choice from the Shaman spell list. You learn additional Shaman cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Shaman table. You learn an additional cantrip at 4th level and an additional one at 10th level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"The Shaman table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these Shaman spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a short or long rest. You prepare the list of Shaman spells that are available for you to cast, choosing from the shaman spell list. When you do so, choose a number of Shaman spells equal to your Wisdom modifier + half of your Shaman level (minimum of one spell). The spells must be of a level for which you have spell slots. The Shaman table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your Shaman spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest. For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1sl-level spell thunderwave, you must spend one of those slots, and you cast it as a 3rd-level spell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Wisdom is your spellcasting ability for your Shaman spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a shaman spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"You can cast a shaman spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use a shaman focus (found in chapter 5) as a spellcasting focus for your Shaman spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shamanic Path Feature",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you start down your shamanic path. Most shamans have similar practices but each has a particular path they follow that when followed have different practices and give them different abilities specialized for their own path. The two major paths are Animism and Totemism, both detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 11th, and 18th level."
+			]
+		},
+		{
+			"name": "Spirit Companion",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you have a spirit companion (you may choose the form it appears to you as). As a bonus action, you can channel your spirit companion and either gain advantage on all Wisdom checks and Wisdom saving throws for the next 5 minutes or you can add your Wisdom modifier to your attack rolls and damage rolls for the next 30 seconds. You regain the use of this feature of a short or long rest."
+			]
+		},
+		{
+			"name": "Healing Touch",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, your touch becomes blessed with spiritual energy and you can use this energy to heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your Shaman class levels times 5. As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of healing touch, expending hit points separately for each one. This feature has no effect on undead and constructs."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Shamanic Path Feature",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature granted by your Shamanic Path."
+			]
+		},
+		{
+			"name": "Spirit Companion (2)",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, your spirit companion allows you to communicate with all creatures. You can cast Speak with Beasts, Speak with Plants, and Speak with the Dead as rituals without expending a spell slot."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Land’s Stride",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, moving through non-magical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard. In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the Entangle spell."
+			]
+		},
+		{
+			"name": "Shamanic Path Feature",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain a feature granted by your Shamanic Path."
+			]
+		},
+		{
+			"name": "Shamanic Mysticism (6th level)",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain access to primal mystical spells that only a deep understanding of the world around you has allowed you to master. Choose one 6th level spell from the Shaman spell list because, unlike the spells you prepare every day, these spells must be learned completely and attempting to master them all can disrupt your inner balance and cause many disastrous effects. You can cast your spell once without expending a spell slot. You must finish a long rest before you can do so again. At higher level, you gain more Shaman spells of your choice that can be cast in this way: one 7th level spell at 13th level, one 8th level spell at 15th level, and one 9th level spell at 17th level. You regain all uses of your Shamanistic Mysticism when you finish a long rest."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Shamanic Mysticism (7th level)",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 13,
+			"entries": [
+				"At 13th level, you gain access to primal mystical spells that only a deep understanding of the world around you has allowed you to master. Choose one 7th level spell from the Shaman spell list because, unlike the spells you prepare every day, these spells must be learned completely and attempting to master them all can disrupt your inner balance and cause many disastrous effects. You can cast your spell once without expending a spell slot. You must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Spirit Companion (3)",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, your spirit companion can allow you to see into the past. You can call up visions of the past that relate to either an object or location in your immediate surroundings. From this, your spirit companion can inform you of either personal (using Personal Aura Seeking) or emotional (using Emotional Aura Seeking) energies related to it. To do so, you enter a meditation-like trance in which you converse with your spiritual companion. The trance lasts for 1 minute and the seeking fails if you are interrupted. You can use this feature a number of times equal to Wisdom modifier, you must take a long rest before you regain all uses of this feature.",
+				{
+					"type": "entries",
+					"name": "Personal Aura Seeking",
+					"entries": [
+						"You discover one piece of information related to who or what has held this item or been in this location in the last several weeks. The number of weeks you are able to see back into are equal to your Wisdom modifier. The information you learn could be a name or a physical description of the individual. The individual you learn of is the last person to hold the item or enter the location, unless you have a physical description or name which you can focus upon that can allow you to learn if that person owned the item or visited the location in the last number of weeks. Further uses of this feature on the same item or location yield information pertaining to the next person to hold the item or enter the location in reversechronological order."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Emotional Aura Seeking",
+					"entries": [
+						"You discover one piece of information related to why or how this item came into ownership or this location was entered in the last several weeks. The number of weeks you are able to see back into are equal to your Wisdom modifier. The information you learn is limited, usually limited to only a single sentence like: “this area was last entered in a plot of revenge,” or “this item last came into ownership by way of theft.” Further uses of this feature on the same item or location yield information pertaining to the next person to hold the item or enter the location in reverse-chronological order."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shamanic Mysticism (8th level)",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, you gain access to primal mystical spells that only a deep understanding of the world around you has allowed you to master. Choose one 8th level spell from the Shaman spell list because, unlike the spells you prepare every day, these spells must be learned completely and attempting to master them all can disrupt your inner balance and cause many disastrous effects. You can cast your spell once without expending a spell slot. You must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Shamanic Mysticism (9th level)",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 17,
+			"entries": [
+				"At 17th level, you gain access to primal mystical spells that only a deep understanding of the world around you has allowed you to master. Choose one 9th level spell from the Shaman spell list because, unlike the spells you prepare every day, these spells must be learned completely and attempting to master them all can disrupt your inner balance and cause many disastrous effects. You can cast your spell once without expending a spell slot. You must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Shamanic Path Feature",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature granted by your Shamanic Path."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Immortal Body",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, the primaI magic that you wield causes you to age and act far differently than a normal humanoid. For every 10 years that pass, your body ages only 1 year, you suffer none of the frailty of old age, you can not be aged magically, and you are immune to disease and poison."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Unyielding Magic",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"subclassShortName": "Animism",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you have learned to use your own life energy to tap into magic that you possess. You can cast a spell that is 5th level or lower that you have prepared without expending a spell slot by expending an amount of hit points equal to 5 times the spell’s level that you are casting. You can also cast spells at higher levels using this feature, to do so you expend a number of hit points for the spell you are casting equivalent to what you would expend on a normal spell of that higher level. Any spells that allow you to regain hit points using this feature can not be used on yourself."
+			]
+		},
+		{
+			"name": "Spiritual Warding",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"subclassShortName": "Animism",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, the animistic spirits which are drawn to you provide protection to you and your allies. You and friendly creatures within 10 feet of you have resistance to damage from spells."
+			]
+		},
+		{
+			"name": "Twilight State",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"subclassShortName": "Animism",
+			"subclassSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain the ability to put creatures or yourself into a state of existence that would make the target unable to interact with the world around you. You can use this feature on yourself or a creature within touch range and it acts as if you casted the Etherealness spell with the following exceptions: the plane they have been put in is the Twilight Plane, a coalition of deep darkness or blinding light. Targets can only perceive the material plane while in this plane by making a DC 15 Wisdom (Perception) Ability check, the target is stuck in the place in which they were transported to the Twilight Plane and can not move from that spot. You can only dispel Twilight State early if you have used the feature on yourself, which takes an action. If you attempt to use this feature on an unwilling creature they can make a Charisma saving throw against your Shaman Spell Save DC. On a success they are not affected by Twilight State. Once you use this feature, you must finish a long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Primal Spirit",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"subclassShortName": "Animism",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, through channeling powerful spiritual energies you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or moss-like, or you might sprout antlers or a lion-like mane. Using your action, you undergo a transformation. For 1 minute, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You and friendly creatures within 30 feet of you can not be charmed or frightened while you are in this form",
+						"All allies within 30 feet you regain 5 hit points per turn",
+						"Enemies within 60 feet of you have disadvantage on all saving throws made against your Shaman spells that you cast"
+					]
+				}
+			]
+		},
+		{
+			"name": "Spiritual Path",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"subclassShortName": "Totemism",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you choose a totem animal from bear, eagle, and wolf, the totem animal you choose will affect the benefits you get at this level as well as affect benefits you gain from abilities at later levels.",
+				{
+					"type": "entries",
+					"name": "Bear",
+					"entries": [
+						"You immediately gain 2 hit points and you gain an additional 2 hit points whenever you gain an additional level in the Shaman class."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eagle",
+					"entries": [
+						"You gain flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wolf",
+					"entries": [
+						"You gain proficiency with Constitution saving throws."
+					]
+				}
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"subclassShortName": "Totemism",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you can attack twice, instead of once, whenever you take the attack action on your turn."
+			]
+		},
+		{
+			"name": "Animalistic Ferocity",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"subclassShortName": "Totemism",
+			"subclassSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you have learned how to channel your animalistic nature to give you an edge on the battlefield. On your turn you can channel your totem animal as a bonus action to gain benefits based on your spirit animal for 1 minute.You may use this feature a number of times equal to your Wisdom modifier, you regain all uses of this feature after a long rest.",
+				{
+					"type": "entries",
+					"name": "Bear",
+					"entries": [
+						"You gain resistance to all non-magical bludgeoning, piercing, and slashing damage"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eagle",
+					"entries": [
+						"Once per turn you may Disengage as a free action and you may Dash as a bonus action"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wolf",
+					"entries": [
+						"You and all allies within 5 feet of you gain advantage on all attack rolls"
+					]
+				}
+			]
+		},
+		{
+			"name": "Primal Power",
+			"source": "WS",
+			"className": "Shaman",
+			"classSource": "WS",
+			"subclassShortName": "Totemism",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you can feel the primal power of your totem animal flowing through your veins and it allows you to push past humanoid limitations based upon your totem animal.",
+				{
+					"type": "entries",
+					"name": "Bear",
+					"entries": [
+						"Your Strength ability score maximum is now 24 and you gain +4 to your Strength score"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eagle",
+					"entries": [
+						"Your Dexterity ability score maximum is now 24 and you gain +4 to your Dexterity score"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wolf",
+					"entries": [
+						"Your Constitution ability score maximum is now 24 and you gain +4 to your Constitution score."
+					]
+				}
+			]
+		}
+	]
+}

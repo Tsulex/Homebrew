@@ -1,0 +1,1272 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Westerland Spirit Sage",
+				"abbreviation": "WS",
+				"full": "Westerland Spirit Sage",
+				"authors": [
+					"Tsulex"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.1.2"
+			}
+		],
+		"dateAdded": 1533205140,
+		"dateLastModified": 1533205140
+	},
+	"class": [
+		{
+			"name": "Sage",
+			"source": "WS",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"wis",
+				"int"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "full",
+			"preparedSpells": "<$level$> + <$wis_mod$>",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"startingProficiencies": {
+				"armor":[
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"derringer"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"animal handling",
+								"history",
+								"insight",
+								"investigation",
+								"medicine",
+								"nature",
+								"persuasion",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item quarterstaff|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"a derringer and 20 pistol ammo",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"quarterstaff|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"_": [
+							"a derringer",
+							"20 pistol ammo"
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"arcane focus|phb"
+						]
+					},
+					{
+						"a": [
+							"scholar's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Magus}",
+						"Spells Known"
+					],
+					"rows": [
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							4,
+							13
+						],
+						[
+							4,
+							13
+						],
+						[
+							4,
+							14
+						],
+						[
+							4,
+							15
+						],
+						[
+							4,
+							16
+						],
+						[
+							4,
+							16
+						],
+						[
+							4,
+							17
+						],
+						[
+							4,
+							18
+						],
+						[
+							4,
+							18
+						],
+						[
+							4,
+							20
+						],
+						[
+							4,
+							20
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Magus}",
+						"{@filter 2nd|spells|level=2|class=Magus}",
+						"{@filter 3rd|spells|level=3|class=Magus}",
+						"{@filter 4th|spells|level=4|class=Magus}",
+						"{@filter 5th|spells|level=5|class=Magus}",
+						"{@filter 6th|spells|level=6|class=Magus}",
+						"{@filter 7th|spells|level=7|class=Magus}",
+						"{@filter 8th|spells|level=8|class=Magus}",
+						"{@filter 9th|spells|level=9|class=Magus}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classSpells": [
+				"Booming Blade|TCE",
+				"Dancing Lights",
+				"Guidance",
+				"Green-Flame Blade|TCE",
+				"Light",
+				"Mage Hand",
+				"Mending",
+				"Message",
+				"Mind Sliver|TCE",
+				"Minor Illusion",
+				"Prestidigitation",
+				"Produce Flame",
+				"Sword Burst|TCE",
+				"Thunderclap|XGE",
+				"True Strike",
+				"Vicious Mockery",
+				"Animal Friendship",
+				"Bane",
+				"Charm Person",
+				"Color Spray",
+				"Comprehend Languages",
+				"Cure Wounds",
+				"Detect Magic",
+				"Disguise Self",
+				"Earth Tremor|XGE",
+				"Faerie Fire",
+				"Feather Fall",
+				"Healing Word",
+				"Heroism",
+				"Tasha's Hideous Laughter",
+				"Identify",
+				"Illusory Script",
+				"Longstrider",
+				"Silent Image",
+				"Sleep",
+				"Speak with Animals",
+				"Thunderwave",
+				"Unseen Servant",
+				"Aid",
+				"Animal Messenger",
+				"Blindness/Deafness",
+				"Calm Emotions",
+				"Darkvision",
+				"Detect Thoughts",
+				"Enhance Ability",
+				"Enthrall",
+				"Heat Metal",
+				"Hold Person",
+				"Invisibility",
+				"Knock",
+				"Lesser Restoration",
+				"Locate Animals or Plants",
+				"Locate Object",
+				"Magic Mouth",
+				"Ray of Enfeeblement",
+				"See Invisibility",
+				"Shatter",
+				"Silence",
+				"Skywrite|XGE",
+				"Suggestion",
+				"Summon Beast|TCE",
+				"Warding Wind|XGE",
+				"Zone of Truth",
+				"Beacon of Hope",
+				"Bestow Curse",
+				"Catnap|XGE",
+				"Clairvoyance",
+				"Dispel Magic",
+				"Enemies Abound|XGE",
+				"Fear",
+				"Glyph of Warding",
+				"Hypnotic Pattern",
+				"Intellect Fortress|TCE",
+				"Major Image",
+				"Nondetection",
+				"Plant Growth",
+				"Sending",
+				"Speak with Dead",
+				"Speak with Plants",
+				"Stinking Cloud",
+				"Tongues",
+				"Leomund's Tiny Hut",
+				"Charm Monster|XGE",
+				"Compulsion",
+				"Confusion",
+				"Dimension Door",
+				"Death Ward",
+				"Freedom of Movement",
+				"Greater Invisibility",
+				"Hallucinatory Terrain",
+				"Locate Creature",
+				"Polymorph",
+				"Animate Objects",
+				"Awaken",
+				"Dominate Person",
+				"Dream",
+				"Geas",
+				"Greater Restoration",
+				"Hold Monster",
+				"Legend Lore",
+				"Mass Cure Wounds",
+				"Mislead",
+				"Modify Memory",
+				"Planar Binding",
+				"Raise Dead",
+				"Scrying",
+				"Seeming",
+				"Skill Empowerment|XGE",
+				"Synaptic Static|XGE",
+				"Teleportation Circle",
+				"Eyebite",
+				"Find the Path",
+				"Forbiddance",
+				"Guards and Wards",
+				"Otto's Irresistible Dance",
+				"Mass Suggestion",
+				"Mental Prison|XGE",
+				"Programmed Illusion",
+				"True Seeing",
+				"Mordenkainen's Sword",
+				"Dream of the Blue Veil|TCE",
+				"Etherealness",
+				"Forcecage",
+				"Mordenkainen's Magnificent Mansion",
+				"Mirage Arcane",
+				"Project Image",
+				"Regenerate",
+				"Resurrection",
+				"Symbol",
+				"Teleport",
+				"Antipathy/Sympathy",
+				"Dominate Monster",
+				"Feeblemind",
+				"Glibness",
+				"Maze",
+				"Mind Blank",
+				"Power Word Stun",
+				"Telepathy",
+				"Astral Projection",
+				"Blade of Disaster|TCE",
+				"Foresight",
+				"Mass Polymorph|XGE",
+				"Power Word Kill",
+				"Psychic Scream|XGE",
+				"True Polymorph"
+			],
+			"classFeatures": [
+				"Sagely Inspiration|Sage|WS|1",
+				"Spellcasting|Sage|WS|1",
+				{
+					"classFeature": "Sage School|Sage|WS|2",
+					"gainSubclassFeature": true
+				},
+				"Renewal of Magic|Sage|WS|2",
+				"Expertise|Sage|WS|3",
+				"Ability Score Improvement|Sage|WS|4",
+				"Constant Musings|Sage|WS|5",
+				"Sagely Inspiration (d8)|Sage|WS|5",
+				"Magical Insight|Sage|WS|6",
+				{
+					"classFeature": "Sage School|Sage|WS|6",
+					"gainSubclassFeature": true
+				},
+				"Serene Mind|Sage|WS|7",
+				"Ability Score Improvement|Sage|WS|8",
+				"Magical Secrets|Sage|WS|10",
+				"Sagely Inspiration (d10)|Sage|WS|10",
+				{
+					"classFeature": "Sage School|Sage|WS|10",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Sage|WS|12",
+				"Lingual Essence|Sage|WS|13",
+				"Magical Secrets (2)|Sage|WS|14",
+				{
+					"classFeature": "Sage School|Sage|WS|14",
+					"gainSubclassFeature": true
+				},
+				"Sagely Inspiration (d12)|Sage|WS|15",
+				"Ability Score Improvement|Sage|WS|16",
+				"Inscrutable Soul |Sage|WS|17",
+				"Magical Secrets (3)|Sage|WS|18",
+				"Ability Score Improvement|Sage|WS|19",
+				"Superior Inspiration|Sage|WS|20"
+			],
+			"subclassTitle": "SS",
+			"fluff": [
+				{
+					"name": "Sage",
+					"type": "section",
+					"entries": [
+						"Few have the vigor to ask the hard questions in life. For the majority, the most simple answers to the questions that they face are often satisfactory enough. Sages dig deeper, they wish to know the bigger picture. They are ever skeptical and are always in search of a better, truer answer. Sages focus on their own personal school of thought and find ways in which they can alter it with their own ideas. They also share their ideas with their comrades, arousing their mind and allowing them to hone their focus. Sages combine their understanding of reality and magic in order to cast and elevate spells based on their philosophical insight. Sages fall within four distinct schools of philosophy: the School of Arts, the School of Combat, the School of Duality, and the School of Thought.",
+						"Sages that fall within the School of Arts place value in the importance of expression. While most Scholars of Art choose to express through music, it is not the only form of expression. Expression can come through all forms of art, such as visual arts like paintings or dancing, auditory arts like music or poems, or sensory arts like cooking or candles. Regardless of the medium, a Scholar of Art’s expressions bolster their allies and hinder their foes.",
+						"Sages that fall within the School of Combat treat battle as a field of study rather than a brackish melee. They are able to weave their insights and inspirations in the midst of combat. Scholars of Combat are also trained in armor and weaponry and are eager to join their companions into the fray. They are able to use their combative inspiration to focus their allies and allow them to go beyond their normal limits. No fighter has ever leaped into battle with a Scholar of Combat at their side and been worse for it.",
+						"Sages that fall within the School of Duality believe that the synchronization of mind and body is essential. To be of both sound mind and sound body takes years of study and meditation. Scholars of Duality find themselves able to enhance their arcane arts through the alignment of their body and mind. Their binary ideologies also influence the spell that they cast, often including aspects of duality. Parts of reality which have duality, such as night and day or life and death, are seen as near-divine through the eyes of the Scholar of Duality. Sages that fall within the School of Thought are the truest of intellectuals. They emphasize the necessity of being wise as well as being knowledgeable. Scholars of Thought are consistently in the process of acquiring new information, seeing life as a constant cycle of learning. They develop critical thinking and logic skills which allow them to pursue knowledge through both wisdom and intelligence. Scholars of Thought are also able to allow both their wisdom and intelligence to influence their spellcasting."
+					],
+					"source": "WS"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "School of Arts",
+			"shortName": "Arts",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Bonus Proficiencies|Sage|WS|Arts|WS|2",
+				"Countercharm|Sage|WS|Arts|WS|2",
+				"Cutting Words|Sage|WS|Arts|WS|6",
+				"Nature’s Melody|Sage|WS|Arts|WS|10",
+				"Display of Heroism|Sage|WS|Arts|WS|14"
+			]
+		},
+		{
+			"name": "School of Combat",
+			"shortName": "Combat",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Bonus Proficiencies|Sage|WS|Combat|WS|2",
+				"Combat Inspiration|Sage|WS|Combat|WS|2",
+				"Extra Attack|Sage|WS|Combat|WS|6",
+				"Instant Inspiration|Sage|WS|Combat|WS|10",
+				"Battle Magic|Sage|WS|Combat|WS|14"
+			]
+		},
+		{
+			"name": "School of Duality",
+			"shortName": "Duality",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Bonus Cantrip|Sage|WS|Duality|WS|2",
+				"Dual Casting|Sage|WS|Duality|WS|2",
+				"Perceptual Burst|Sage|WS|Duality|WS|6",
+				"Mind and Body|Sage|WS|Duality|WS|10",
+				"Improved Dual Casting|Sage|WS|Duality|WS|14"
+			]
+		},
+		{
+			"name": "School of Thought",
+			"shortName": "Thought",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Bonus Proficiencies|Sage|WS|Thought|WS|2",
+				"Thorough Logic|Sage|WS|Thought|WS|2",
+				"Additional Magical Secrets|Sage|WS|Thought|WS|6",
+				"Potent Spellcasting|Sage|WS|Thought|WS|10",
+				"Rational Spells|Sage|WS|Thought|WS|14"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Sagely Inspiration",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you can inspire others through stirring words, advice, or knowledge. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Sagely Inspiration die, a d6.",
+				"Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Sagely Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Sagely Inspiration die is rolled, it is lost. A creature can have only one Sagely Inspiration die at a time. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest. Your Sagely Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"You have learned to untangle and reshape the fabric of reality by understanding the flow and ebb of the magic and the universe as a whole. Your spells are part of your vast repertoire, magic that you can utilize for different situations. See chapter 10 of the PHB for the general rules of spellcasting and chapter 5 of this document for the Sage spell list.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"You know two cantrips of your choice from the Sage Spell list. You learn additional Sage cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Sage table."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Sage table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells. you must expend a slot of the spell's level at higher. You regain all expended spell slots when you finish a long rest. For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st level and higher",
+					"entries": [
+						"You know four 1st-level spells of your choice from the Sage spell list. The Spells Known column of the Sage table shows when you learn more Sage spells of your choice. Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level. Additionally, when you gain a level in this class, you can choose one of the Sage spells you know and replace it with another spell from the Sage spell list, which also must be of a level for which you have spell slots."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Wisdom is your spellcasting ability for your Sage spells. Your magic comes from your perception of the universe and the ways you have learned how to coax out this magic through your perception and knowledge of this magic. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Sage spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"You can cast any sage spell you know as a ritual if that spell has the ritual tag."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use an arcane focus as a spellcasting focus for your sage spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sage School",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you delve into the advanced techniques of a sage school of your choice: School of Arts, School of Combat, School of Duality, and School of Thought all detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, again at 10th, and 14th level."
+			]
+		},
+		{
+			"name": "Renewal of Magic",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you have learned to regain some of your magical energy through use of rest meditation and pondering. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your Sage level (rounded up), and none of the slots can be 6th level or higher. For example, if you are a 4th level Sage, you can recover up to two levels worth of spell slots. You can recover either a 2nd level spell slot or two 1st-level spell slots."
+			]
+		},
+		{
+			"name": "Expertise",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Sagely Inspiration (d8)",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 5,
+			"entries": [
+				"At 5th level, the Sagely Inspiration die becomes a d8."
+			]
+		},
+		{
+			"name": "Constant Musings",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 5,
+			"entries": [
+				"At 5th level, you regain all of your expended uses of Sagely Inspiration when you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Sage School",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature granted by your Sage School."
+			]
+		},
+		{
+			"name": "Magical Insight",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, your perception of magic allows you to see through magical deception much more easily. Any Wisdom saving throws or ability checks to see through illusion spells are done with advantage."
+			]
+		},
+		{
+			"name": "Serene Mind",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Sage School",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain a feature granted by your Sage School."
+			]
+		},
+		{
+			"name": "Magical Secrets",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Sage table, or a cantrip. The chosen spells count as Sage spells for you and are included in the number in the Spells Known column of the Sage table. You learn two additional spells from any class at 14th level and again at 18th level."
+			]
+		},
+		{
+			"name": "Sagely Inspiration (d10)",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, the Sagely Inspiration die becomes a d10."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Lingual Essence",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 13,
+			"entries": [
+				"At 13th level, you learn to perceive the souls and minds of others so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say."
+			]
+		},
+		{
+			"name": "Sage School",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain a feature granted by your Sage School."
+			]
+		},
+		{
+			"name": "Magical Secrets (2)",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you learn two additional spells from any class."
+			]
+		},
+		{
+			"name": "Sagely Inspiration (d12)",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, the Sagely Inspiration die becomes a d12."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Inscrutable Soul",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 17,
+			"entries": [
+				"At 17th level, your thoughts can not be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can not be compelled to tell the truth by magic."
+			]
+		},
+		{
+			"name": "Magical Secrets (3)",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you learn two additional spells from any class."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Superior Inspiration",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, when you roll initiative and have no uses of Sagely Inspiration left, you regain one use."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Bonus Proficiencies",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Arts",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you gain proficiency with three artistic instruments of your choice and the Performance skill. You may also use instruments you are proficient in as a spell focus."
+			]
+		},
+		{
+			"name": "Countercharm",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Arts",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear or see you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required)."
+			]
+		},
+		{
+			"name": "Cutting Words",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Arts",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, a damage roll, or a saving throw you can use your reaction to expend one of your uses of Sagely Inspiration, roll a Sagely Inspiration die and subtract the number rolled from the creature's roll. You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll, ability check, or saving throw succeeds or fails, or before the creature deals its damage. The creature is immune if it can not hear you or if it is immune to being charmed."
+			]
+		},
+		{
+			"name": "Nature’s Melody",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Arts",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you have learned how to draw on the essence of nature and the meaning of the world. As an action you can express this essence and when you do you can choose from cold, fire, lightning, necrotic, radiant, or thunder and you and a number of allies equal to your Charisma modifier (minimum of 1) gain a resistance to that damage type. When you or an ally make a damage roll, after making a successful weapon attack, you can add 1d6 of the chosen damage to the damage roll. Instead of choosing a damage type you could instead choose to have a number of allies equal to your Charisma modifier (minimum of 1) regain hit points equal to 1d6 plus your Charisma modifier at the end of your turn until the end of the duration of this feature. This feature lasts for a number of rounds equal to half of your Sage class levels and you must concentrate on this feature as if it were a spell. Creatures can not gain the benefits of this feature if they can not hear you, if they are immune to being charmed, or if they are a construct or undead. Once you use this feature, you must finish a long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Display of Heroism",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Arts",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you have learned how to use your art to not only touch people’s minds but also to inspire their souls. As an action you can begin to express an anecdote of heroism that gives all allies within 60 feet advantage on attack rolls, ability checks, and saving throws. You must concentrate on this feature as if you were concentrating on a spell, and this feature can last a number of rounds equal to your Charisma modifier (minimum of 1). Once you use this feature, you must finish a long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Combat",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"When you join the School of Combat at 2nd level, you gain proficiency with medium armor, shields, martial weapons, and firearms."
+			]
+		},
+		{
+			"name": "Combat Inspiration",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Combat",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you learn to inspire others in battle. A creature that has a Sagely Inspiration die from you can roll that die and add the number rolled to a weapon damage roll when they successfully make a weapon attack. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Sagely Inspiration die and add the number rolled to its AC against that attack, this feature can be used after the attack is declared but before knowing whether it hits or misses."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Combat",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Instant Inspiration",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Combat",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, when a creature receives Sagely Inspiration it can use its reaction to immediately make one weapon attack against an enemy."
+			]
+		},
+		{
+			"name": "Battle Magic",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Combat",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you have mastered the art of weaving spellcasting and weapon use into a single act. When you use your action to cast a Sage spell, you can make one weapon attack as a bonus action."
+			]
+		},
+		{
+			"name": "Bonus Cantrip",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Duality",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"When you join the School of Duality at 2nd level, you can choose an additional cantrip from the Sage’s cantrip list and add it to your cantrips known."
+			]
+		},
+		{
+			"name": "Dual Casting",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Duality",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, when you cast a cantrip that normally targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other, if the cantrip has a range of touch both targets must be within touch range of you."
+			]
+		},
+		{
+			"name": "Perceptual Burst",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Duality",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you learn how to unleash the latent magical energy residing in yourself that can be a boon for allies but the bane of your enemies. As an action you can unleash this energy, all allies within 30 feet regain hit points equal to your Sage class levels + your Wisdom modifier and all enemies within 30 feet must make a Constitution saving throw against your Sage spell save DC, on a failure they take damage equal to two times your Sage level, half as much on a success. You can not use this feature again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Mind and Body",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Duality",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you have learned how to operate matters of mind and body so that they do not interfere as heavily with each other. You gain resistance to psychic damage and you now have advantage on all concentration checks."
+			]
+		},
+		{
+			"name": "Improved Dual Casting",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Duality",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, when you cast a Sage spell of 1st through 5th level that targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other, if the spell has a range of touch it both targets must be within touch range of you. If the spell consumes its material components, you must provide the material components for each target."
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Thought",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"When you join the School of thought at 2nd level, you learn a language of your choice. You also become proficient in your choice of two of the following skills: Animal Handling, Arcana, History, Insight, Investigation, Mechanics, Medicine, Nature, Perception, Religion, or Survival."
+			]
+		},
+		{
+			"name": "Thorough Logic",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Thought",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you gain the ability to further your logical pursuits by using your wisdom. When you make an ability check with a skill that you are proficient in and that uses your Intelligence ability modifier you may also add your Wisdom ability modifier to the ability check."
+			]
+		},
+		{
+			"name": "Additional Magical Secrets",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Thought",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Sage table, or a cantrip. The chosen spells count as Sage spells for you but do not count against the number of Sage spells you have prepared."
+			]
+		},
+		{
+			"name": "Potent Spellcasting",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Thought",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you add your Wisdom modifier to the damage you deal with any Sage cantrip."
+			]
+		},
+		{
+			"name": "Rational Spells",
+			"source": "WS",
+			"className": "Sage",
+			"classSource": "WS",
+			"subclassShortName": "Thought",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you have learned to use not only your Wisdom in spellcasting but also your Intelligence. When you cast a Sage spell that you know, you can add your Intelligence modifier in addition to any place you would use your normal spellcasting ability. This includes when determining Spell Save DCs, spell attack modifiers and spell damage."
+			]
+		}
+	]
+}

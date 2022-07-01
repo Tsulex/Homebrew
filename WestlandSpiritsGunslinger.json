@@ -1,0 +1,1467 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Westerland Spirit Gunslinger",
+				"abbreviation": "WS",
+				"full": "Westerland Spirit Gunslinger",
+				"authors": [
+					"Tsulex"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.1.2"
+			}
+		],
+		"optionalFeatureTypes": {
+			"FS:G": "Fighting Style, Gunslinger",
+			"TS:G": "Trick Shots, Gunslinger"
+		},
+		"dateAdded": 1533205140,
+		"dateLastModified": 1533205140
+	},
+	"class": [
+		{
+			"name": "Gunslinger",
+			"source": "WS",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"dex",
+				"str"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"{@item shortsword|phb}",
+					"{@item scimitar|phb}",
+					"{@item whip|phb}",
+					"firearms"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"history",
+								"insight",
+								"intimidation",
+								"perception",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"a duster",
+					"a revolver and 20 pistol ammo",
+					"(a) a {@filter simple weapon|items|source=phb|category=basic|type=simple weapon} or {@item shortsword|phb}",
+					"(a) a derringer and 20 pistol ammo or (b) an lever rifle and 20 rifle ammo",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"_": [
+							"a duster"
+						]
+					},
+					{
+						"_": [
+							"a revolver and 20 pistol ammo"
+						]
+					},{
+						"a": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						],
+						"b": [
+							"shortsword|phb"
+						]
+					},
+					{
+						"a": [
+							"a derringer and 20 pistol ammo"
+						],
+						"b": [
+							"a lever rifle and 20 rifle ammo"
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"classFeatures": [
+				"Fighting Style|Gunslinger|WS|1",
+				"Second Wind|Gunslinger|WS|1",
+				"Action Surge|Gunslinger|WS|2",
+				{
+					"classFeature": "Gunslinger Archetype Feature|Gunslinger|WS|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gunslinger|WS|4",
+				"Extra Attack|Gunslinger|WS|5",
+				"Longshot|Gunslinger|WS|6",
+				{
+					"classFeature": "Gunslinger Archetype Feature|Gunslinger|WS|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gunslinger|WS|8",
+				"Hit The Floor|Gunslinger|WS|9",
+				{
+					"classFeature": "Gunslinger Archetype Feature|Gunslinger|WS|10",
+					"gainSubclassFeature": true
+				},
+				"Extra Attack (2)|Gunslinger|WS|11",
+				"Ability Score Improvement|Gunslinger|WS|12",
+				"Hit The Floor Improvement|Gunslinger|WS|13",
+				"Longshot (2)|Gunslinger|WS|14",
+				{
+					"classFeature": "Gunslinger Archetype Feature|Gunslinger|WS|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gunslinger|WS|16",
+				"Action Surge (2)|Gunslinger|WS|17",
+				"Bullseye|Gunslinger|WS|17",
+				{
+					"classFeature": "Gunslinger Archetype Feature|Gunslinger|WS|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gunslinger|WS|19",
+				"Quickdraw|Gunslinger|WS|20"
+			],
+			"subclassTitle": "GA",
+			"fluff": [
+				{
+					"name": "Gunslinger",
+					"type": "section",
+					"entries": [
+						"Since their invention, firearms have been favored by the common folk over the bow and sword due to their relative ease of use. For most, firearms have become a tool in the kit of their everyday lives; though, Gunslingers refine the use of firearms to a near art form. Gunslingers are at the top of their class in terms of speed, accuracy, and grit. Through practice and talent, they can draw, unload, and reload their guns in the time it would take a normal individual to manage their first straight shot. Gunslingers are the masters of all types of firearms, from pistols, rifles, and shotguns, to larger weaponry like gatling guns. If it slings lead, Gunslingers do it best. A Gunslinger's style of firearms combat falls into three categories: the Sharpshooter, the Crackshot, and the Holy Gunslinger",
+						"The Sharpshooter places all of their bets on accuracy, they believe that you can not kill what you can not hit.",
+						"Sharpshooters put years of practice into getting their lead down-range and on target. Their focus on accuracy has not only allowed them to consistently strike their target, but to do so in such a way that it damages them gravely. The Sharpshooter’s strenuous practice has also gifted them with the ability to reload their firearms much faster than other Gunslingers. A Sharpshooter’s intended target and point of impact rarely differentiate. The Crackshot is a believer that gunslinging is more complex than the general population is led to believe. Where some are satisfied with simply “pointing and shooting,” Crackshots see potential in their weaponry. They use their firearms as tools rather than weapons, putting intent into their shots. Crackshots can use their firearms to distract, disarm, push, or otherwise impair their targets. They also wield a combative know-how, which allows them to manipulate themselves, their allies, and their opponents to their tactical advantage.",
+						"The Holy Gunslinger merges gunslinging with zealotism.",
+						"Their devotion to their deity has granted them access to a range of divine spells in addition to their gunslinging prowess. The Holy Gunslinger’s faith also grants them the ability to manipulate their gunslinging to fall further in line with their Zealot siblings. They are able to inscribe their rounds with divine properties and sing holy hymns in order to channel their deity’s influence on the battlefield."
+					],
+					"source": "WS"
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Akimbo",
+			"source": "WS",
+			"featureType": [
+				"FS:G"
+			],
+			"entries": [
+				"When you engage in two weapon fighting, you may use your bonus action to make a ranged weapon attack. You can add your ability modifier to the damage of the second attack."
+			]
+		},
+		{
+			"name": "Dual-Weapon Fighting",
+			"source": "WS",
+			"featureType": [
+				"FS:G"
+			],
+			"entries": [
+				"When you engage in two-weapon fighting while you are wielding a melee weapon in one hand and a ranged weapon in the other, you can add your ability modifier to the damage of the second attack and you gain a +2 bonus to damage rolls with the weapon in your main hand."
+			]
+		},
+		{
+			"name": "Marksman",
+			"source": "WS",
+			"featureType": [
+				"FS:G"
+			],
+			"entries": [
+				"You gain a +2 bonus to attack rolls you make with ranged weapons."
+			]
+		},
+		{
+			"name": "Rifleman",
+			"source": "WS",
+			"featureType": [
+				"FS:G"
+			],
+			"entries": [
+				"When you roll a 1 or 2 on a damage die for an attack you make with a ranged weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The ranged weapon must have the two-handed property for you to gain this benefit."
+			]
+		},
+		{
+			"name": "Focused Shot",
+			"entries": [
+				"When you make an attack roll against a creature with a Firearm, you can expend one trick die to add the trick die to the attack roll. You can use this Trick Shot before or after the attack roll is made, but before whether or not the attack hit is known."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Gunslinger’s Cry",
+			"entries": [
+				"On your turn, you can use a bonus action and expend one trick die to shout your gunslinger’s cry, bostlering one of your companions. Target a friendly creature who can see or hear you, that creature gains temporary hit points equal to your trick die + your Charisma modifier."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Gunslinger’s Grit",
+			"entries": [
+				"When another creature damages you with an attack, you can use your reaction and expend one trick die to reduce the damage by the number you roll on your trick die + your Dexterity modifier."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Gunslinger's Reflexes",
+			"entries": [
+				"On your turn, you can use a bonus action and expend one trick die in order to take the “Dodge” action until the start of your next turn."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Hand Shot",
+			"entries": [
+				"When you hit a creature with a weapon attack with a Firearm, you can expend one trick die to attempt to make the creature drop one item of your choice that it is holding. You add the trick die to the damage of the attack. The target must make a Strength saving throw; on a failed save, the creature drops the item."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Intimidating Shot",
+			"entries": [
+				"When you hit a creature with a weapon attack with a Firearm, you can expend one trick die to attempt to intimidate the target. You add the trick die to the damage of the attack. The target must make a Wisdom saving throw. On a failed save, the creature is frightened of you until the end of your next turn."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Leg Shot",
+			"entries": [
+				"When you hit a creature with a weapon attack with a Firearm, you can expend one trick die to attempt to knock the target down. You add the trick die to the attack's damage roll. If the target is a size of Large or smaller, it must make a Strength saving throw. On a failed save, the target becomes prone."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Long Shot",
+			"entries": [
+				"When you make a weapon attack with a Firearm on your turn, you can expend one trick die to allow you to shoot up to the maximum range of the weapon without disadvantage resulting from the target’s distance from you. If the attack hits, you add the trick die to the attack's damage roll."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Opportuning Shot",
+			"entries": [
+				"When you hit a creature with a weapon attack with a Firearm, you can expend one trick die to attempt to make the creature vulnerable to subsequent attacks. You add the trick die to the damage of the attack. The next attack roll against the target by a creature other than you has advantage. This effect becomes inactive at the start of your next turn."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Provoking Shot",
+			"entries": [
+				"When you hit a creature with a weapon attack with a Firearm, you can expend one trick die to attempt to provoke a creature into attacking you. You add the trick die to the damage of the attack. The target must make a Wisdom saving throw. On a failed save, the target had disadvantage on all attack rolls against creatures other than you. This effect becomes inactive at the start of your next turn."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Ramming Shot",
+			"entries": [
+				"When you hit a creature with a weapon attack with a Firearm, you can expend one trick die to attempt to push a target backwards. You add the trick die to the damage of the attack roll. If the target is a size of Large or smaller, it must make a Strength saving throw. On a failed save, the creature is shoved up to 15 feet in a direction away from you."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Returning Shot",
+			"entries": [
+				"When a creature misses you with an attack, you can use your reaction and expend one trick die to make a weapon attack with a Firearm against that creature. If your attack hits, you add the trick die to the damage of the attack."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Ricochet Shot",
+			"entries": [
+				"When you hit a creature with a weapon attack with a Firearm, you can expend one trick die to attempt to damage another creature with the same attack. Target another creature within 5 feet of the original target and within your weapon’s range. If the original attack roll would hit the second creature, they take damage equal to the number you roll on your trick die. The damage is of the same damage type dealt by the original attack."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Rigged Shot",
+			"entries": [
+				"You can expend one trick die and use a bonus action to prepare your next shot. Target one creature within range of your Firearm. You have advantage on your next attack roll against that creature. If the attack hits, add the trick die to the damage of the attack."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		},
+		{
+			"name": "Tactical Shot",
+			"entries": [
+				"When you hit a creature with a weapon attack with a Firearm, you can expend one trick die to inform one of your allies of a more tactical position. You add the trick die to the damage of the attack. Target a friendly creature who can see or hear you. That creature can use its reaction to move up to half of its movement speed, the creature doesn’t provoke opportunity attacks during this movement."
+			],
+			"source": "WS",
+			"featureType": [
+				"TS:G"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Crackshot",
+			"shortName": "Crackshot",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Harmonic Magician",
+							"source": "PHB"
+						}
+					],
+					"colLabels": [
+						"{@filter Trick Shots|optionalfeatures|Feature Type=TS:G|}",
+						"Trick Dice",
+						"Dice"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							4,
+							"d8"
+						],
+						[
+							3,
+							4,
+							"d8"
+						],
+						[
+							3,
+							4,
+							"d8"
+						],
+						[
+							3,
+							4,
+							"d8"
+						],
+						[
+							5,
+							5,
+							"d8"
+						],
+						[
+							5,
+							5,
+							"d8"
+						],
+						[
+							5,
+							5,
+							"d8"
+						],
+						[
+							7,
+							5,
+							"d10"
+						],
+						[
+							7,
+							5,
+							"d10"
+						],
+						[
+							7,
+							5,
+							"d10"
+						],
+						[
+							7,
+							5,
+							"d10"
+						],
+						[
+							7,
+							5,
+							"d10"
+						],
+						[
+							9,
+							6,
+							"d12"
+						],
+						[
+							9,
+							6,
+							"d12"
+						],
+						[
+							9,
+							6,
+							"d12"
+						],
+						[
+							9,
+							6,
+							"d12"
+						],
+						[
+							9,
+							6,
+							"d12"
+						],
+						[
+							9,
+							6,
+							"d12"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Deliberate Aim|Gunslinger|WS|Crackshot|WS|3",
+				"Points of Vulnerability|Gunslinger|WS|Crackshot|WS|3",
+				"Correcting Shot|Gunslinger|WS|Crackshot|WS|7",
+				"Heightened Deliberate Aim|Gunslinger|WS|Crackshot|WS|10",
+				"Heightened Deliberate Aim (2)|Gunslinger|WS|Crackshot|WS|15",
+				"Relentless|Gunslinger|WS|Crackshot|WS|18"
+			]
+		},
+		{
+			"name": "Holy Gunslinger",
+			"shortName": "Holy Gunslinger",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"spellcastingAbility": "cha",
+			"casterProgression": "1/3",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Holy Gunslinger",
+							"source": "WS"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|subclass=Gunslinger: Holy Gunslinger}",
+						"{@filter Spells Known|spells|subclass=Gunslinger: Holy Gunslinger}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"subclasses": [
+						{
+							"name": "Holy Gunslinger",
+							"source": "WS"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=Gunslinger: Holy Gunslinger}",
+						"{@filter 2nd|spells|level=2|subclass=Gunslinger: Holy Gunslinger}",
+						"{@filter 3rd|spells|level=3|subclass=Gunslinger: Holy Gunslinger}",
+						"{@filter 4th|spells|level=4|subclass=Gunslinger: Holy Gunslinger}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassSpells": [
+				"fire bolt",
+				"guidance",
+				"light",
+				"lightning lure|TCE",
+				"mending",
+				"resistance",
+				"sacred flame",
+				"shocking grasp",
+				"spare the dying",
+				"thaumaturgy",
+				"toll the dead|XGE",
+				"word of radiance|XGE",
+				"bane",
+				"bless",
+				"ceremony|XGE",
+				"command",
+				"compelled duel",
+				"create or destroy water",
+				"cure wounds",
+				"detect evil and good",
+				"detect magic",
+				"detect poison and disease",
+				"divine favor",
+				"guiding bolt",
+				"healing word",
+				"hellish rebuke",
+				"inflict wounds",
+				"protection from evil and good",
+				"purify food and drink",
+				"sanctuary",
+				"shield of faith",
+				"aid",
+				"augury",
+				"blindness/deafness",
+				"calm emotions",
+				"continual flame",
+				"enhance ability",
+				"find traps",
+				"gentle repose",
+				"hold person",
+				"lesser restoration",
+				"magic weapon",
+				"locate object",
+				"prayer of healing",
+				"protection from poison",
+				"silence",
+				"spiritual weapon",
+				"warding bond",
+				"zone of truth",
+				"animate dead",
+				"aura of vitality",
+				"beacon of hope",
+				"bestow curse",
+				"clairvoyance",
+				"create food and water",
+				"crusader's mantle",
+				"daylight",
+				"dispel magic",
+				"elemental weapon",
+				"glyph of warding",
+				"life transference|XGE",
+				"magic circle",
+				"mass healing word",
+				"meld into stone",
+				"protection from energy",
+				"remove curse",
+				"revivify",
+				"sending",
+				"speak with dead",
+				"spirit guardians",
+				"spirit shroud|TCE",
+				"tongues",
+				"water walk",
+				"aura of life",
+				"aura of purity",
+				"banishment",
+				"compulsion",
+				"control water",
+				"death ward",
+				"divination",
+				"freedom of movement",
+				"guardian of faith",
+				"locate creature",
+				"stone shape"
+			],
+			"subclassFeatures": [
+				"Spellcasting|Gunslinger|WS|Holy Gunslinger|WS|3",
+				"Covenant Weapon|Gunslinger|WS|Holy Gunslinger|WS|3",
+				"Your Name on It|Gunslinger|WS|Holy Gunslinger|WS|7",
+				"Holy Hymns|Gunslinger|WS|Holy Gunslinger|WS|10",
+				"Cleansing Shot|Gunslinger|WS|Holy Gunslinger|WS|15",
+				"Avenging Angel|Gunslinger|WS|Holy Gunslinger|WS|18"
+			]
+		},
+		{
+			"name": "Sharpshooter",
+			"shortName": "Sharpshooter",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Improved Critical|Gunslinger|WS|Sharpshooter|WS|3",
+				"Vigilance|Gunslinger|WS|Sharpshooter|WS|3",
+				"Sleight of Hand|Gunslinger|WS|Sharpshooter|WS|7",
+				"Deadly Focus|Gunslinger|WS|Sharpshooter|WS|10",
+				"Superior Critical|Gunslinger|WS|Sharpshooter|WS|15",
+				"Eagle Eye|Gunslinger|WS|Sharpshooter|WS|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Fighting Style",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you adopt a particular style of fighting as your specialty, Choose one of the following options. You can not take a Fighting Style option more than once, even if you later get to choose again.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Akimbo",
+							"entries": [
+								"When you engage in two weapon fighting, you may use your bonus action to make a ranged weapon attack. You can add your ability modifier to the damage of the second attack."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dual-Weapon Fighting",
+							"entries": [
+								"When you engage in two-weapon fighting while you are wielding a melee weapon in one hand and a ranged weapon in the other, you can add your ability modifier to the damage of the second attack and you gain a +2 bonus to damage rolls with the weapon in your main hand."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Marksman",
+							"entries": [
+								"You gain a +2 bonus to attack rolls you make with ranged weapons."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Rifleman",
+							"entries": [
+								"When you roll a 1 or 2 on a damage die for an attack you make with a ranged weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The ranged weapon must have the two-handed property for you to gain this benefit."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Second Wind",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your Gunslinger level. Once you use this feature, you must finish a short or long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Action Surge",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you can push yourself beyond your normal limits for a moment on your turn. You can take one additional action in addition to your regular action and bonus action. Once you use this feature, you must finish a short or long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Gunslinger Archetype Feature",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you choose an archetype that you strive to emulate in your gunslinging style and techniques. Choose Holy Gunslinger, Sharpshooter or Crackshot, all detailed at the end of the class description. The archetype you choose grants you features at 3rd level, and again at 7th, 10th, 15th, and 18th level."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 5,
+			"entries": [
+				"At 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Longshot",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you have learned how to make a shot past the perceived limit of your firearms. At the start of your turn you can use this feature to effectively double the ranges, both the normal and the maximum range, of all firearm attacks you make until the start of your next turn. Once you use this feature, you must finish a short or long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Gunslinger Archetype Feature",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you gain a feature granted by your Gunslinger Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Hit The Floor",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 9,
+			"entries": [
+				"At 9th level, when a creature targets you with a ranged weapon attack, you may use your reaction to fall prone, imposing disadvantage on ranged attack rolls."
+			]
+		},
+		{
+			"name": "Gunslinger Archetype Feature",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain a feature granted by your Gunslinger Archetype."
+			]
+		},
+		{
+			"name": "Extra Attack (2)",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you can attack three times whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Hit The Floor Improvement",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 13,
+			"entries": [
+				"At 13th level, you can stand up from prone using only 5 feet of movement and when you go prone using this feature you have advantage against Dexterity saving throws."
+			]
+		},
+		{
+			"name": "Longshot (2)",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you can use it twice before a rest."
+			]
+		},
+		{
+			"name": "Gunslinger Archetype Feature",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, you gain a feature granted by your Gunslinger Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Action Surge (2)",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 17,
+			"entries": [
+				"At 17th level, you can use it twice before a rest, but only once on the same turn."
+			]
+		},
+		{
+			"name": "Bullseye",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 17,
+			"entries": [
+				"At 17th level, when you make a successful weapon attack with a firearm you can use this feature to make another attack roll against the target and if you successfully make the attack roll you can double the damage dice for the attack. If you use this feature when you score a critical hit the damage dice are tripled altogether. You can use this feature once per long rest."
+			]
+		},
+		{
+			"name": "Gunslinger Archetype Feature",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature granted by your Gunslinger Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Quickdraw",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, Gunslingers know how to strike fast and true. When you roll initiative, you gain a special turn that takes place before other creatures can act. On this turn, you can use your action to take the Attack action. If more than one creature in an encounter has this feature, they all act first in order of initiative, then the regular initiative order begins. If you would normally be 'surprised at the start of an encounter, you are not surprised but you do not gain this extra turn. Additionally, you can draw and holster your weapons freely on your turn."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Deliberate Aim",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Crackshot",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"When you choose this archetype at 3rd level, you learn trick shots that are fueled by special dice called trick dice.",
+				{
+					"type" : "entries",
+					"name" : "Trick Shots",
+					"entries" : [
+						"You choose three trick shots, which are detailed under “Trick Shots” below. Trick Shots are used to incorporate additional effects to your shots. You can use only one Trick Shot per attack. You choose two additional Trick Shots of your choice at 7th, 10th, and 15th level. Whenever you choose new trick shots, you can replace one trick shot you have already chosen with a different one."
+					]
+				},
+				{
+					"type" : "entries",
+					"name" : "Trick Dice",
+					"entries" : [
+						"You have four trick dice, which are d8s. A trick die is expended when you use it. You regain all of your expended trick dice when you finish a short or long rest. You gain another trick die at 7th level and one more at 15th level."
+					]
+				},
+				{
+					"type" : "entries",
+					"name" : "Saving Throws",
+					"entries" : [
+						"Some of your trick shots require your target to make a saving throw to resist the shot's effects. The saving throw DC is calculated as follows:",
+						{
+							"type": "abilityDc",
+							"name": "Trick Shot",
+							"attributes": [
+								"dex"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Points of Vulnerability",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Crackshot",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you have learned how to identify gaps in defenses and failures in the armor of enemies that you face.",
+				"You can choose a creature that you can see and until you finish a long rest, that creature’s AC is unaffected by any armor it is wearing (including natural armor) when determining if attack rolls you make against it hit. This feature does not affect the creature adding its Dexterity modifier to its AC. Once you use this feature you can not use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Correcting Shot",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Crackshot",
+			"subclassSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you have learned how to show off your shooting skills in battle, allowing you to make confusing shots some would call impossible. When you miss an attack roll, as a reaction you can expend a trick die, choosing a Trick Shot to go with it, and make a new attack roll either against the original target or a new target of your choice. The trick die is expended whether you hit the target with your new attack roll or not."
+			]
+		},
+		{
+			"name": "Heightened Deliberate Aim",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Crackshot",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, your trick dice turn into d10s."
+			]
+		},
+		{
+			"name": "Heightened Deliberate Aim (2)",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Crackshot",
+			"subclassSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, they turn into d12s."
+			]
+		},
+		{
+			"name": "Relentless",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Crackshot",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, your gunslinging ability is unmatched, when you roll initiative and have no trick dice remaining, you regain 1 trick die. Also, when you take the Attack action you may make another attack in addition to the ones granted by your class."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Holy Gunslinger",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you augment your natural prowess with the ability to cast spells.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"You learn two cantrips of your choice from the Zealot spell list. You learn an additional Zealot cantrip of your choice at 10th level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Holy Gunslinger Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest. For example, if you know the 1st-level spell Cure Wounds and have a 1st level and a 2nd level spell slot available, you can cast cure wounds using either slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st-level and higher",
+					"entries": [
+						"You know 3 1st level Zealot spells of your choice. The Spells Known column of the Holy Gunslinger Spellcasting table shows when you learn more Zealot spells of 1st level or higher. Whenever you gain a level in this class, you can replace one of the Zealot spells you know with another spell of your choice from the Zealot spell list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Charisma is your spellcasting ability for your Holy Gunslinger spells, but unlike Zealots you must commit the spells that you use to memory. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for any Holy Gunslinger spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Covenant Weapon",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Holy Gunslinger",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you learn a ritual that creates a holy bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond. Once you have bonded a weapon to yourself, you can not be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two."
+			]
+		},
+		{
+			"name": "Your Name on It",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Holy Gunslinger",
+			"subclassSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you have learned how to spiritually engrave your ammunition with the proper markings so that they carry holy elements with them. When you shoot a round, you can choose for it to do 1d6 of extra radiant, fire, or lightning damage. This damage increases at 13th level to 2d6."
+			]
+		},
+		{
+			"name": "Holy Hymns",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Holy Gunslinger",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you can call on your god’s assistance by singing their praises (literally, you can sing, hum, whistle, speak scripture, et cetera). As a bonus action you can start your Hymn, which lasts for 1 minute. It ends early if you are incapacitated or can not continue your Hymn (i.e. the Silence spell). You can not conduct your Hymns if you are wearing medium armor, heavy armor, or a shield. While your Hymn is active you gain all of the following benefits that you choose:",
+				{
+					"type": "list",
+					"items": [
+						"You gain a bonus to you AC equal to your Charisma modifier (minimum +1).",
+						"Your walking speed increases by 10 feet.",
+						"You have advantage on Dexterity (Acrobatics) and Strength (Athletics) checks.",
+						"When friendly creatures within 30 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1)."
+					]
+				},
+				"You regain the use of this feature after a short or long rest."
+			]
+		},
+		{
+			"name": "Cleansing Shot",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Holy Gunslinger",
+			"subclassSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, your shots can do more than just maim, they carry your god’s power and they can heal. As an action, you can shoot a creature and heal it for 8d8 hit points and you can end one negative condition or spell effect on the creature, this does not affect undead or constructs. You regain use of this feature after a short or long rest."
+			]
+		},
+		{
+			"name": "Avenging Angel",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Holy Gunslinger",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you can assume the form of an angelic avenger. Using your action, you undergo a transformation. Once you use this feature, you can not use it again until you finish a long rest. For 1 hour, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Wings sprout from your back and grant you a flying speed of 60 feet.",
+						"You emanate an aura of menace in a 30 feet radius. The first time any enemy creature enters the aura or starts its turn in the aura, the creature must succeed on a Wisdom saving throw or become frightened of you for 1 minute or until it takes any damage.",
+						"Attack rolls against the frightened creature have advantage."
+					]
+				},
+				{
+					"type": "abilityDc",
+					"name": "Avenging Angel",
+					"attributes": [
+						"cha"
+					]
+				}
+			]
+		},
+		{
+			"name": "Improved Critical",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Sharpshooter",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, your firearm weapon attacks score a critical hit on a die roll of 19 or 20 before any modifiers are calculated."
+			]
+		},
+		{
+			"name": "Vigilance",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Sharpshooter",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, whenever you roll for initiative you may roll twice and take the higher roll for your initiative."
+			]
+		},
+		{
+			"name": "Sleight of Hand",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Sharpshooter",
+			"subclassSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you can ignore the reloading qualities of all firearms which you are proficient in."
+			]
+		},
+		{
+			"name": "Deadly Focus",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Sharpshooter",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, when you make a firearm weapon attack, you may choose to reroll that attack, but before whether the attack hits or misses is known. You may use this feature a number of times equal to your Wisdom modifier and you regain all uses of this feature on a long rest."
+			]
+		},
+		{
+			"name": "Superior Critical",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Sharpshooter",
+			"subclassSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, your weapon attacks score a critical hit on a dieroll of 18-20 before any modifiers are calculated."
+			]
+		},
+		{
+			"name": "Eagle Eye",
+			"source": "WS",
+			"className": "Gunslinger",
+			"classSource": "WS",
+			"subclassShortName": "Sharpshooter",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, your ability to pick out targets from a range is almost inhuman to the point where attacking at long range does not impose disadvantage on your ranged weapon attack rolls, your ranged weapon attacks ignore ½ cover and ¾ cover.",
+				"Additionally, you have advantage on any Wisdom (Perception) and Intelligence (Investigation) checks relying on sight."
+			]
+		}
+	]
+}

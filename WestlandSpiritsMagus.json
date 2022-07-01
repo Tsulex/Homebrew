@@ -1,0 +1,1535 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Westerland Spirit Magus",
+				"abbreviation": "WS",
+				"full": "Westerland Spirit Magus",
+				"authors": [
+					"Tsulex"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.1.2"
+			}
+		],
+		"optionalFeatureTypes": {
+			"MM": "Metamagic, Magus"
+		},
+		"dateAdded": 1533205140,
+		"dateLastModified": 1533205140
+	},
+	"class": [
+		{
+			"name": "Magus",
+			"source": "WS",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "full",
+			"preparedSpells": "<$level$> + <$int_mod$>",
+			"cantripProgression": [
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"{@item dagger|phb}",
+					"{@item dart|phb}",
+					"{@item sling|phb}",
+					"{@item quarterstaff|phb}",
+					"{@item shortbow|phb}",
+					"derringer"
+
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"insight",
+								"investigation",
+								"medicine",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"a derringer and 20 pistol ammo",
+					"a {@item dagger|phb}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"a {@item spellbook|phb}"
+				],
+				"defaultData": [
+					{
+						"_": [
+							"a derringer and 20 pistol ammo"
+						]
+					},
+					{
+						"_": [
+							"dagger|phb"
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"arcane focus|phb"
+						]
+					},
+					{
+						"a": [
+							"scholar's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"spellbook|phb"
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Magi Points",
+						"{@filter Cantrips Known|spells|level=0|class=Magus}"
+					],
+					"rows": [
+						[
+							0,
+							3
+						],
+						[
+							2,
+							3
+						],
+						[
+							3,
+							3
+						],
+						[
+							4,
+							4
+						],
+						[
+							5,
+							4
+						],
+						[
+							6,
+							4
+						],
+						[
+							7,
+							4
+						],
+						[
+							8,
+							4
+						],
+						[
+							9,
+							4
+						],
+						[
+							10,
+							5
+						],
+						[
+							11,
+							5
+						],
+						[
+							12,
+							5
+						],
+						[
+							13,
+							5
+						],
+						[
+							14,
+							5
+						],
+						[
+							15,
+							5
+						],
+						[
+							16,
+							5
+						],
+						[
+							17,
+							5
+						],
+						[
+							18,
+							5
+						],
+						[
+							19,
+							5
+						],
+						[
+							20,
+							5
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Magus}",
+						"{@filter 2nd|spells|level=2|class=Magus}",
+						"{@filter 3rd|spells|level=3|class=Magus}",
+						"{@filter 4th|spells|level=4|class=Magus}",
+						"{@filter 5th|spells|level=5|class=Magus}",
+						"{@filter 6th|spells|level=6|class=Magus}",
+						"{@filter 7th|spells|level=7|class=Magus}",
+						"{@filter 8th|spells|level=8|class=Magus}",
+						"{@filter 9th|spells|level=9|class=Magus}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classSpells": [
+				"Acid Splash",
+				"Booming Blade|TCE",
+				"Chill Touch",
+				"Control Flames|XGE",
+				"Create Bonfire|XGE",
+				"Dancing Lights",
+				"Fire Bolt",
+				"Frostbite|XGE",
+				"Green-Flame Blade|TCE",
+				"Gust|XGE",
+				"Infestation|XGE",
+				"Light",
+				"Lightning Lure|TCE",
+				"Mage Hand",
+				"Mending",
+				"Message",
+				"Mind Sliver|TCE",
+				"Minor Illusion",
+				"Mold Earth|XGE",
+				"Poison Spray",
+				"Prestidigitation",
+				"Ray of Frost",
+				"Shape Water|XGE",
+				"Shocking Grasp",
+				"Sword Burst|TCE",
+				"Thunderclap|XGE",
+				"Toll the Dead|XGE",
+				"True Strike",
+				"Absorb Elements|XGE",
+				"Alarm",
+				"Armor Of Agathys",
+				"Burning Hands",
+				"Catapult|XGE",
+				"Cause Fear|XGE",
+				"Charm Person",
+				"Color Spray",
+				"Comprehend Languages",
+				"Detect Magic",
+				"Disguise Self",
+				"Earth Tremor|XGE",
+				"Expeditious Retreat",
+				"False Life",
+				"Feather Fall",
+				"Find Familiar",
+				"Tenser's Floating Disk",
+				"Fog Cloud",
+				"Grease",
+				"Tasha's Hideous Laughter",
+				"Ice Knife|XGE",
+				"Identify",
+				"Illusory Script",
+				"Jump",
+				"Longstrider",
+				"Mage Armor",
+				"Magic Missile",
+				"Protection from Evil and Good",
+				"Shield",
+				"Silent Image",
+				"Sleep",
+				"Snare|XGE",
+				"Tasha's Caustic Brew|TCE",
+				"Thunderwave",
+				"Unseen Servant",
+				"Aganazzar's Scorcher|XGE",
+				"Melf's Acid Arrow",
+				"Alter Self",
+				"Arcane Lock",
+				"Nystul's Magic Aura",
+				"Blindness/Deafness",
+				"Blur",
+				"Continual Flame",
+				"Darkness",
+				"Darkvision",
+				"Detect Thoughts",
+				"Dragon's Breath|XGE",
+				"Dust Devil|XGE",
+				"Earthbind|XGE",
+				"Enlarge/Reduce",
+				"Enthrall",
+				"Flaming Sphere",
+				"Gentle Repose",
+				"Gust of Wind",
+				"Hold Person",
+				"Invisibility",
+				"Knock",
+				"Levitate",
+				"Locate Object",
+				"Maximilian's Earthen Grasp|XGE",
+				"Magic Mouth",
+				"Magic Weapon",
+				"Mind Spike|XGE",
+				"Mirror Image",
+				"Misty Step",
+				"Pyrotechnics|XGE",
+				"Ray of Enfeeblement",
+				"Rope Trick",
+				"Snilloc's Snowball Swarm|XGE",
+				"Scorching Ray",
+				"See Invisibility",
+				"Shadow Blade|XGE",
+				"Shatter",
+				"Spider Climb",
+				"Suggestion",
+				"Tasha's Mind Whip|TCE",
+				"Warding Wind|XGE",
+				"Web",
+				"Animate Dead",
+				"Bestow Curse",
+				"Catnap|XGE",
+				"Clairvoyance",
+				"Counterspell",
+				"Dispel Magic",
+				"Enemies Abound|XGE",
+				"Erupting Earth|XGE",
+				"Fear",
+				"Fireball",
+				"Fly",
+				"Flame Arrows|XGE",
+				"Gaseous Form",
+				"Glyph of Warding",
+				"Haste",
+				"Hypnotic Pattern",
+				"Intellect Fortress|TCE",
+				"Life Transference|XGE",
+				"Lightning Bolt",
+				"Melf's Minute Meteors|XGE",
+				"Magic Circle",
+				"Major Image",
+				"Nondetection",
+				"Phantom Steed",
+				"Protection from Energy",
+				"Remove Curse",
+				"Sending",
+				"Sleet Storm",
+				"Slow",
+				"Spirit Shroud|TCE",
+				"Stinking Cloud",
+				"Summon Fey|TCE",
+				"Summon Lesser Demons|XGE",
+				"Summon Shadowspawn|TCE",
+				"Summon Undead|TCE",
+				"Thunder Step|XGE",
+				"Tidal Wave|XGE",
+				"Leomund's Tiny Hut",
+				"Tiny Servant|XGE",
+				"Tongues",
+				"Vampiric Touch",
+				"Wall of Sand|XGE",
+				"Wall of Water|XGE",
+				"Water Breathing",
+				"Arcane Eye",
+				"Banishment",
+				"Evard's Black Tentacles",
+				"Blight",
+				"Charm Monster|XGE",
+				"Watery Sphere|XGE",
+				"Compulsion",
+				"Confusion",
+				"Conjure Minor Elementals",
+				"Control Water",
+				"Dimension Door",
+				"Fabricate",
+				"Mordenkainen's Faithful Hound",
+				"Fire Shield",
+				"Greater Invisibility",
+				"Hallucinatory Terrain",
+				"Ice Storm",
+				"Locate Creature",
+				"Phantasmal Killer",
+				"Polymorph",
+				"Mordenkainen's Private Sanctum",
+				"Otiluke's Resilient Sphere",
+				"Leomund's Secret Chest",
+				"Sickening Radiance|XGE",
+				"Stone Shape",
+				"Storm Sphere|XGE",
+				"Summon Aberration|TCE",
+				"Summon Construct|TCE",
+				"Summon Elemental|TCE",
+				"Vitriolic Sphere|XGE",
+				"Wall of Fire",
+				"Animate Objects",
+				"Bigby's Hand",
+				"Cloudkill",
+				"Cone of Cold",
+				"Conjure Elemental",
+				"Contact Other Plane",
+				"Control Winds|XGE",
+				"Creation",
+				"Danse Macabre|XGE",
+				"Dawn|XGE",
+				"Dominate Person",
+				"Dream",
+				"Enervation|XGE",
+				"Far Step|XGE",
+				"Geas",
+				"Hold Monster",
+				"Immolation|XGE",
+				"Infernal Calling|XGE",
+				"Legend Lore",
+				"Mislead",
+				"Modify Memory",
+				"Negative Energy Flood|XGE",
+				"Passwall",
+				"Planar Binding",
+				"Scrying",
+				"Seeming",
+				"Skill Empowerment|XGE",
+				"Steel Wind Strike|XGE",
+				"Synaptic Static|XGE",
+				"Telekinesis",
+				"Rary's Telepathic Bond",
+				"Teleportation Circle",
+				"Transmute Rock|XGE",
+				"Wall of Force",
+				"Wall of Light|XGE",
+				"Wall of Stone",
+				"Chain Lightning",
+				"Circle of Death",
+				"Contingency",
+				"Create Homunculus|XGE",
+				"Create Undead",
+				"Disintegrate",
+				"Eyebite",
+				"Flesh to Stone",
+				"Otiluke's Freezing Sphere",
+				"Globe of Invulnerability",
+				"Guards and Wards",
+				"Drawmij's Instant Summons",
+				"Investiture of Flame|XGE",
+				"Investiture of Ice|XGE",
+				"Investiture of Stone|XGE",
+				"Investiture of Wind|XGE",
+				"Otto's Irresistible Dance",
+				"Magic Jar",
+				"Mass Suggestion",
+				"Mental Prison|XGE",
+				"Move Earth",
+				"Programmed Illusion",
+				"Scatter|XGE",
+				"Soul Cage|XGE",
+				"Summon Fiend|TCE",
+				"Sunbeam",
+				"Tasha's Otherworldly Guise|TCE",
+				"Tenser's Transformation|XGE",
+				"True Seeing",
+				"Wall of Ice",
+				"Mordenkainen's Sword",
+				"Crown of Stars|XGE",
+				"Delayed Blast Fireball",
+				"Dream of the Blue Veil|TCE",
+				"Etherealness",
+				"Finger of Death",
+				"Forcecage",
+				"Mordenkainen's Magnificent Mansion",
+				"Mirage Arcane",
+				"Plane Shift",
+				"Power Word Pain|XGE",
+				"Prismatic Spray",
+				"Project Image",
+				"Reverse Gravity",
+				"Sequester",
+				"Simulacrum",
+				"Symbol",
+				"Teleport",
+				"Whirlwind|XGE",
+				"Abi-Dalzim's Horrid Wilting|XGE",
+				"Antimagic Field",
+				"Antipathy/Sympathy",
+				"Clone",
+				"Control Weather",
+				"Demiplane",
+				"Dominate Monster",
+				"Feeblemind",
+				"Illusory Dragon|XGE",
+				"Incendiary Cloud",
+				"Maddening Darkness|XGE",
+				"Maze",
+				"Mighty Fortress|XGE",
+				"Mind Blank",
+				"Power Word Stun",
+				"Sunburst",
+				"Astral Projection",
+				"Blade of Disaster|TCE",
+				"Foresight",
+				"Gate",
+				"Imprisonment",
+				"Invulnerability|XGE",
+				"Mass Polymorph|XGE",
+				"Meteor Swarm",
+				"Power Word Kill",
+				"Prismatic Wall",
+				"Psychic Scream|XGE",
+				"Shapechange",
+				"Time Stop",
+				"True Polymorph",
+				"Weird",
+				"Wish"
+			],
+			"classFeatures": [
+				"Spellcasting|Magus|WS|1",
+				"Rigoric|Magus|WS|1",
+				{
+					"classFeature": "Arcane Research Feature|Magus|WS|2",
+					"gainSubclassFeature": true
+				},
+				"Font of Magic|Magus|WS|2",
+				"Metamagic|Magus|WS|3",
+				"Ability Score Improvement|Magus|WS|4",
+				{
+					"classFeature": "Arcane Research Feature|Magus|WS|6",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Magus|WS|8",
+				"Metamagic (2)|Magus|WS|9",
+				{
+					"classFeature": "Arcane Research Feature|Magus|WS|10",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Magus|WS|12",
+				{
+					"classFeature": "Arcane Research Feature|Magus|WS|14",
+					"gainSubclassFeature": true
+				},
+				"Metamagic (3)|Magus|WS|15",
+				"Ability Score Improvement|Magus|WS|16",
+				"Metamagic Mastery|Magus|WS|17",
+				{
+					"classFeature": "Arcane Research Feature|Magus|WS|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Magus|WS|19",
+				"Font Overwhelming|Magus|WS|20"
+			],
+			"subclassTitle": "AR",
+			"fluff": [
+				{
+					"name": "Magus",
+					"type": "section",
+					"entries": [
+						"The use of magic is a long standing tradition, though now it has become less common with fewer practitioners than ever. Along with this, magic that is not derived from divinity is seen as unholy and an affront to the divine, making many ostracize Magi and their like. The Magus is one of the distinct arcane practices to survive through the progression of society. Magi combine natural talent along with study and a keen mind in order to perform the arcane arts they have dedicated themselves to. They commit themselves to a particular style of casting and elevate spells of that style. Long live the Magi. Magi scholars fall into four distinct practices denoted by their title: the Beguiler, the Preserver, the Revoker, and the Summoner.",
+						"The Beguiler’s practice focuses on the Illusion and Enchantment schools of magic. Beguilers use their magic to alter the mind and body of their targets. Their Enchantment magic serves to imbue their targets or give themselves power over the target. Their Illusion magic serves to alter their target’s perception and create false imagery to trick their targets. Skilled Beguilers will have their opponents questioning reality.",
+						"The Preserver’s practice focuses on the Divination and Abjuration schools of magic. Preservers use their magic to inform and protect their allies. Their Divination magic serves to reveal useful information about their targets. Their Abjuration magic serves to protect from, block harm from, or otherwise banish the opponents of their allies. A Preserver’s goal is to support themselves and their allies by any means possible.",
+						"The Revoker’s practice focuses on the Transmutation and Necromancy schools of magic. Revokers use their magic to transform and manipulate the living and the unliving. Their Transmutation magic serves to transform the physical dimensions of beings. Their Necromancy magic serves to manipulate the living and the dead and the relationship between them. Revokers are often the least respected of the Magi practices as their manipulation of life forces is often seen as heretical.",
+						"The Summoner’s practice focuses on the Conjuration and Evocation schools of magic. Summoners use their magic to manipulate energies and create creatures or materials. Their Conjuration magic serves to summon creatures and lasting arcane energy; what is conjured gains benefits based on the Conjurer’s elemental affinity. Their Evocation magic serves to briefly create bursts of arcane energy in order to dispatch foes as needed. Summoners are the most combative of the Magi schools as they are unabated by the risks of combat and they possess the types of magic best suited for it."
+					],
+					"source": "WS"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Beguiler",
+			"shortName": "Beguiler",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"After Image|Magus|WS|Beguiler|WS|2",
+				"Classic Misdirection|Magus|WS|Beguiler|WS|6",
+				"Additional Metamagic: Flexible Saving Throws|Magus|WS|Beguiler|WS|10",
+				"Mind Control|Magus|WS|Beguiler|WS|14",
+				"Tangible Projections|Magus|WS|Beguiler|WS|18"
+			]
+		},
+		{
+			"name": "Preserver",
+			"shortName": "Preserver",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Arcane Shield|Magus|WS|Preserver|WS|2",
+				"Intervention|Magus|WS|Preserver|WS|6",
+				"Additional Metamagic: Enhanced Concentration|Magus|WS|Preserver|WS|10",
+				"Improved Intervention|Magus|WS|Preserver|WS|14",
+				"Spell Resistance|Magus|WS|Preserver|WS|18"
+			]
+		},
+		{
+			"name": "Revoker",
+			"shortName": "Revoker",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Success Revoked|Magus|WS|Revoker|WS|2",
+				"Phylactery|Magus|WS|Revoker|WS|6",
+				"Additional Metamagic: Chronoshift|Magus|WS|Revoker|WS|10",
+				"Flesh from Earth|Magus|WS|Revoker|WS|14",
+				"Enhanced Phylactery|Magus|WS|Revoker|WS|18"
+			]
+		},
+		{
+			"name": "Summoner",
+			"shortName": "Summoner",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Elemental Affinity|Magus|WS|Summoner|WS|2",
+				"Potent Cantrip|Magus|WS|Summoner|WS|6",
+				"Additional Metamagic: Energy Change|Magus|WS|Summoner|WS|10",
+				"Elemental Aura|Magus|WS|Summoner|WS|14",
+				"Elemental Master|Magus|WS|Summoner|WS|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Spellcasting",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"As a student of arcane magic, you have started to show your abilities in using the arcane arts through natural talent and study and your spellbook containing your spells show the first glimmerings of your true power. See chapter 10 of the PHB for the general rules of spellcasting and chapter 5 of this document for the Magus spell list.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"At 1st level, you know three cantrips of your choice from the Magus spell list. You learn additional Magus cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Magus table."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellbook",
+					"entries": [
+						"At 1st level, you have a spellbook containing six 1st-level Magus spells of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Your Spellbook",
+					"entries": [
+						"The spells that you add to your spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other spells during your adventures. You could discover a spell recorded on a scroll in an evil Magus' chest, for example, or in a dusty tome in an ancient library.",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Copying a Spell into the Book",
+									"entries": [
+										"When you find a Magus spell of 1st level or higher, you can add it to your spellbook if it is of a level for which you have spell slots and if you can spare the time to decipher and copy it. Copying a spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the Magus who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation. For each level of the spell, the process takes 2 hours and costs 50gp. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other spells."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Replacing the Book",
+									"entries": [
+										"You can copy a spell from your own spellbook into another book—for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need to spend only 1 hour and 10 gp for each level of the copied spell. If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many Magi keep backup spellbooks in a safe place."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "The Book's Appearance",
+									"entries": [
+										"Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged-together after you lost your previous spellbook in a mishap."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"The Magus table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest. You prepare the list of Magus spells that are available for you to cast. To do so, choose a number of Magus spells from your spellbook equal to your Intelligence modifier + your Magus level (minimum of one spell). The spells must be of a level for which you have spell slots. For example, if you are a 3rd-level Magus, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook.",
+						"If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell does not remove it from your list of prepared spells. You can change your list of prepared spells when you finish a long rest. Preparing a new list of Magus spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Intelligence is your spellcasting ability for your Magus spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Magus spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"You can cast a Magus spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use an arcane focus (found in chapter 5 of the PHB) as a spellcasting focus for your Magus spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Learning Spells of 1st level and higher",
+					"entries": [
+						"Each time you gain a Magus level, you can add two Magus spells of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Magus table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook”)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Rigoric",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you know Rigoric, the language of Magi that they use not only to communicate with each other but also helps them channel arcane energies. Rigoric is largely a runic language but takes from multiple languages from throughout history, from those that have gone extinct to those still around today. Rigoric takes from anything that better helps Magi channel their magic. Rigoric is a secret language of Magi, but the basics of it are often known to those who are proficient in knowledge of Arcana, as the teachers of both practices often overlap. You and others who know this language automatically spot hidden messages in Rigoric. Others spot the message's presence with a successful DC 15 Wisdom (Perception) check but can not decipher it without magical intervention. You can also attempt to determine the nature or gist of messages in Rigoric with a successful DC 15 Intelligence (Arcana) check, you may miss out on certain information in the message or the nuances of the message by trying to understand the message in this manner."
+			]
+		},
+		{
+			"name": "Arcane Research Feature",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, the way that most Magi develop their natural talent is through research and intense practice that come through the 4 major houses of magic: The Beguilers, The Preservers, The Revokers, and the Summoners. All four are detailed at the end of the class description. Your choice grants you features when you choose it at 2nd level and again at 6th, 10th, 14th, and 18th level."
+			]
+		},
+		{
+			"name": "Font of Magic",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by Magi Points, which allow you to create a variety of magical effects.",
+				{
+					"type": "entries",
+					"name": "Creating Spell Slots",
+					"entries": [
+						"You can transform unexpended Magi Points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.",
+						{
+							"type": "table",
+							"caption": "Creating Spell Slots",
+							"colLabels": [
+								"Spell Slot Level",
+								"Magi Point Cost"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"1st",
+									"2"
+								],
+								[
+									"2nd",
+									"3"
+								],
+								[
+									"3rd",
+									"5"
+								],
+								[
+									"4th",
+									"6"
+								],
+								[
+									"5th",
+									"7"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Converting a Spell Slot to Magi Points",
+					"entries": [
+						"As a bonus action on your turn, you can expend one spell slot and gain a number of Magi Points equal to the slot's level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magi Points",
+					"entries": [
+						"You have 2 Magi Points, and you gain one additional point every time you level up, to a maximum of 20 at level 20. You can never have more Magi Points than shown on the table for your level. You regain all spent Magi Points when you finish a long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Metamagic",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options depending on your arcane research. You gain another Metamagic option at 9th and 15th level. You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.",
+				{
+					"type": "entries",
+					"name": "Careful Spell",
+					"entries": [
+						"When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 Magi Point and choose a number of those creatures up to your Intelligence modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Distant Spell",
+					"entries": [
+						"When you cast a spell that has a range of 5 feet or greater, you can spend 1 Magi Point to double the range of the spell. When you cast a spell that has a range of touch, you can spend 1 Magi Point to make the range of the spell 30 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Empowered Spell",
+					"entries": [
+						"When you roll damage for a spell, you can spend 1 Magi Point to reroll a number of the damage dice up to your Intelligence modifier (minimum of one). You must use the new rolls. You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Extended Spell",
+					"entries": [
+						"When you cast a spell that has a duration of 1 minute or longer. you can spend 1 Magi Point to double its duration, to a maximum duration of 24 hours."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Heightened Spell",
+					"entries": [
+						"When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 Magi Points to give one target of the spell disadvantage on its first saving throw made against the spell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Quickened Spell",
+					"entries": [
+						"When you cast a spell that has a casting time of 1 action, you can spend 2 Magi Points to change the casting time to 1 bonus action for this casting."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Subtle Spell",
+					"entries": [
+						"When you cast a spell, you can spend 1 Magi Point to cast it without any somatic or verbal components."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Twinned Spell",
+					"entries": [
+						"When you cast a spell that targets only one creature and does not have a range of self, you can spend a number of Magi Points equal to the spell's level to target a second creature in range with the same spell (1 Magi Point if the spell is a cantrip)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Arcane Research Feature",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature granted by your Arcane Research."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Metamagic (2)",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 9,
+			"entries": [
+				"At 9th level, you gain another Metamagic option."
+			]
+		},
+		{
+			"name": "Arcane Research Feature",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain a feature granted by your Arcane Research."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Arcane Research Feature",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain a feature granted by your Arcane Research."
+			]
+		},
+		{
+			"name": "Metamagic (3)",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, you gain another Metamagic option."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Metamagic Mastery",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 17,
+			"entries": [
+				"At 17th level, your research on metamagic has peaked. Instead of only being able to use your subclass specific metamagic option (received at 10th level in your subclass archetype) on spells of your subclass's specific spell types, you may instead use them on any Magus spells you know."
+			]
+		},
+		{
+			"name": "Arcane Research Feature",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature granted by your Arcane Research."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Font Overwhelming",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, you have found a way to overcharge yourself with arcane energy for a short time so that you can twist spells to your whim without expending your Magi Points. When you use this ability for the next minute you may use metamagic without expending Magi Points, you regain use of this feature after a short or long rest."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "After Image",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Beguiler",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you learn how to use your spells to bewilder your enemies and cause them to lose track of your exact location. After casting an Illusion or Enchantment spell the next attack roll against you is done so with disadvantage until the start."
+			]
+		},
+		{
+			"name": "Classic Misdirection",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Beguiler",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you have learned how to make a duplicate of yourself to distract enemies and take your place in the fray. As an action, you create a perfect illusion of yourself which is semi-tangible and has hit points equal to ¼ of your hit point total; it lasts for up to 5 minutes. The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you. For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses.",
+				"Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target. The duplicate disappears when it is reduced to 0 hit points; the creature that caused its health to drop to 0 must make a Wisdom saving throw against your Spell Save DC, or be charmed by you for 1 minute. You regain use of this feature after a short or long rest."
+			]
+		},
+		{
+			"name": "Additional Metamagic: Flexible Saving Throws",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Beguiler",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain the ability to change and shift the type of saving throw used to resist your spells from your specialized schools of magic to confuse and undermine those against you. When you cast an Enchantment or Illusion spell that requires a creature to make a saving throw, you may expend 3 Magi Points and change the type of saving throw for the spell to another type of saving throw of your choice."
+			]
+		},
+		{
+			"name": "Mind Control",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Beguiler",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain the ability to take over and control the mind of another creature. You choose a creature within 60 feet of you that you can see, this creature must make a Wisdom saving throw (DC = your Spell Save DC). If you are in combat with the creature, it has advantage on the saving throw. If the creature is unconscious, it has disadvantage on the saving throw. If the creature is immune to psychic damage, it is unaffected by this feature. On a failed save, you are now completely in control of that creature’s body for 1 hour, temporarily leaving your own body. You gain the creature's physical ability scores but maintain your mental ability scores. On a successful save, nothing happens. While in control of this creature's body, your body lies unconscious and you can not feel or perceive anything that happens to your body. If your body dies while using this feature, you lose control of the creature’s mind. After using this feature, you must finish a long rest before you regain use of this feature."
+			]
+		},
+		{
+			"name": "Tangible Projections",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Beguiler",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you have learned the secret of weaving tangible magic into your illusions to give them a temporary reality. When you cast an Illusion spell of 1st level or higher, you can choose one inanimate, non-magical object that is part of the illusion and make that object real. You can do this on your turn as a bonus action while the spell is ongoing. The object remains real for 1 minute. For example, you can create an illusion of a door on the wall of a jail cell and make it real long enough for you to step through. You can attempt to make an Illusory creature real but it must be of CR 5 or lower. If you choose illusory reality to create a creature, you may not use it again this way until you finish a long rest."
+			]
+		},
+		{
+			"name": "Arcane Shield",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Preserver",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, your studies have revealed to you how to to use your arcane energy to protect you and those around you. When you cast a Divination or Abjuration spell you may imbue one ally with minor protective magic. Choose yourself or one ally within 50 feet of you, they gain an AC bonus equal to ½ of the level (rounded up) of Divination or Abjuration spell you casted until the start of your next turn. You may use this feature a number of times equal to your Intelligence modifier and all uses of this feature are restored when you finish a long rest."
+			]
+		},
+		{
+			"name": "Intervention",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Preserver",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you can see glimpses into the future. These glimpses allow you to concentrate your magical energy to give some ability to change the future. Whenever you or a creature within 100 feet of you makes an ability check, attack roll, or saving throw, you can use your reaction to store that roll and make them reroll. You can then use another reaction to use the stored roll to replace any ability check, attack roll or saving throw. If you do not use the stored roll before you finish a long rest you lose it. Once you use this feature you can not use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Additional Metamagic: Enhanced Concentration",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Preserver",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain the ability to use your magic to enhance your concentration and make it so you can concentrate multiple spells of your specialized schools of magic at once. When you cast a spell on your turn and you are already concentrating on a spell you may expend 3 Magi Points to cast another spell that is either Abjuration or Divination that requires concentration. When making concentration checks for these spells, you make each concentration check separately."
+			]
+		},
+		{
+			"name": "Improved Intervention",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Preserver",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, your glimpses into the future have grown strong enough that you can change events more frequently. You can use your 'Intervention' feature twice before finishing a long rest."
+			]
+		},
+		{
+			"name": "Spell Resistance",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Preserver",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you have advantage on saving throws against spells and spell effects. Additionally, you have resistance against the damage of spells and spell effects."
+			]
+		},
+		{
+			"name": "Success Revoked",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Revoker",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you gain the ability to cause an enemy to fail when they should have succeeded. When an enemy succeeds a saving throw against a Transmutation or Necromancy spell you casted, you may instead use your reaction to make them reroll the saving throw (they must use the new roll). Once you use this feature, you may not use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Phylactery",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Revoker",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, your work has brought you to the creation of a phylactery, an ancient form of magic that you believe will give you insight into the vast mysteries of life. You can spend 8 hours creating a phylactery that contains vast magic that you can only tap the surface of. You gain one of the following benefits that you can change at the end of every long rest:",
+				{
+					"type": "list",
+					"items": [
+						"Darkvision out to a range of 60 feet.",
+						"An increase to speed of 10 feet while you are unencumbered.",
+						"Proficiency in Constitution saving throws.",
+						"Resistance to acid, cold, fire, lightning, necrotic, or thunder damage (your choice whenever you choose this benefit)."
+					]
+				},
+				"Additionally, Undead creatures you summon gain hit points equal to your Magus level and deal additional damage on their attacks equal to your proficiency bonus."
+			]
+		},
+		{
+			"name": "Additional Metamagic: Chronoshift",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Revoker",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain the ability to manipulate the time it would normally take to cast one of your spells from your specialized schools of magic. When you cast a Necromancy or Transmutation spell that has a casting time of 1 hour or less, you can choose to expend 3 Magi Points to change its casting time to 1 action."
+			]
+		},
+		{
+			"name": "Flesh from Earth",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Revoker",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain the ability to transmute humanoid bodies. As an action, you can transform from 100 pounds to 300 pounds of wood, dirt, stone, iron, copper, or material into a humanoid body or skeleton, and you can also do the reverse. You can turn a creature within 5 feet of you into either wood, dirt, stone, iron, copper, or silver; when attempting this on a creature that is still living, that creature makes a Constitution saving throw (DC = your Magi Spell Save DC). On a failed save, they take 7d8 of force damage, the creature takes half as much on a successful save. If the target is reduced to 0 hit points by this feature, they turn into the material you choose when you initiated this feature.",
+				"This feature has no effect on undead and constructs. You can use this a number of times equal to your Intelligence modifier and you regain all uses of this feature when you finish a long rest."
+			]
+		},
+		{
+			"name": "Enhanced Phylactery",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Revoker",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you have now studied your phylactery further and have uncovered more of its many mysterious properties. Your phylactery can give you:",
+				{
+					"type": "list",
+					"items": [
+						"Resistance to necrotic damage (if you choose necrotic damage as your resistance as your benefit through the phylactery you instead gain immunity to necrotic damage), or poison damage.",
+						"An increase to speed of 10 feet while you are unencumbered.Advantage on saving throws against being poisoned, and immunity to disease."
+					]
+				},
+				"Additionally, when you cast Animate Dead or Create Undead, you can target one additional corpse or pile of bones, creating another zombie, skeleton, or ghoul as appropriate."
+			]
+		},
+		{
+			"name": "Elemental Affinity",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Summoner",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you pick one damage type from acid, cold, fire, lightning, or thunder. Spells you cast ignore resistance to the damage of the chosen type (including attacks by creatures summoned by spells you cast)."
+			]
+		},
+		{
+			"name": "Potent Cantrip",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Summoner",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, your damaging cantrips become more effective at damaging foes. When a creature succeeds on a saving throw against a cantrip you casted, the creature takes ½ the cantrip's damage (if any) but suffers no additional effect from the cantrip. Additionally, if the cantrip is casted as a spell attack you may add your Intelligence modifier to the damage roll."
+			]
+		},
+		{
+			"name": "Additional Metamagic: Energy Change",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Summoner",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you have gained the ability to change the damage type that a spell from your specialized school of magic inflicts. When you cast a spell that is either Conjuration or Evocation that inflicts damage, you may expend 3 Magi Points to change that spell's damage type to acid, cold, fire, lightning, or thunder damage."
+			]
+		},
+		{
+			"name": "Elemental Aura",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Summoner",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you have learned how to make the creatures you summon, along with yourself, radiate your favored element. At the end of your turn, you and any creatures you summon deal 5 damage of the type you chose at 2nd level with 'Elemental Affinity' to any creature within 5 feet of you or any creature you summon. An enemy can not take more than 20 damage per round from this feature."
+			]
+		},
+		{
+			"name": "Elemental Master",
+			"source": "WS",
+			"className": "Magus",
+			"classSource": "WS",
+			"subclassShortName": "Summoner",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you have now mastered the element you chose at 2nd level as part of your 'Elemental Affinity'. You now ignore immunities and gain resistance to the damage type you chose with 'Elemental Affinity'."
+			]
+		}
+	]
+}

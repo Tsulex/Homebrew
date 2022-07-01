@@ -1,0 +1,1166 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Westerland Spirit Specialist",
+				"abbreviation": "WS",
+				"full": "Westerland Spirit Specialist",
+				"authors": [
+					"Tsulex"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.1.2"
+			}
+		],
+		"dateAdded": 1533205140,
+		"dateLastModified": 1533205140
+	},
+	"class": [
+		{
+			"name": "Specialist",
+			"source": "WS",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"firearms"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"deception",
+								"insight",
+								"intimidation",
+								"history",
+								"investigation",
+								"nature",
+								"perception",
+								"sleight of hand",
+								"survival",
+								"stealth"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"a duster, revolver, and 20 pistol ammo",
+					"a {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"a derringer and 20 pistol ammo",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"the material to make 40 bombs"
+				],
+				"defaultData": [
+					{
+						"_": [
+							"duster",
+							"revolver",
+							"20 pistol ammo"
+						]
+					},
+					{
+						"_": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"_": [
+							"derringer",
+							"20 pistol ammo"
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"material to make 40 bombs"
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Bomb Damage"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 6,
+										"faces": 8
+									}
+								]
+							}
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Bombs|Specialist|WS|1",
+				"By Land and by Sea|Specialist|WS|1",
+				{
+					"classFeature": "Area of Expertise Feature|Specialist|WS|2",
+					"gainSubclassFeature": true
+				},
+				"Quick Hands|Specialist|WS|2",
+				"Smoke Bomb|Specialist|WS|3",
+				"Ability Score Improvement|Specialist|WS|4",
+				"Extra Attack|Specialist|WS|5",
+				"Explosive Force|Specialist|WS|6",
+				{
+					"classFeature": "Area of Expertise Feature|Specialist|WS|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Specialist|WS|8",
+				"Blast Shield|Specialist|WS|9",
+				"Improved Bombs|Specialist|WS|10",
+				{
+					"classFeature": "Area of Expertise Feature|Specialist|WS|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Specialist|WS|12",
+				"Silencer|Specialist|WS|13",
+				{
+					"classFeature": "Area of Expertise Feature|Specialist|WS|14",
+					"gainSubclassFeature": true
+				},
+				"Field Reconnaissance|Specialist|WS|15",
+				"Ability Score Improvement|Specialist|WS|16",
+				"Improved Bombs (2)|Specialist|WS|17",
+				{
+					"classFeature": "Area of Expertise Feature|Specialist|WS|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Specialist|WS|19",
+				"Nitroglycerin|Specialist|WS|20"
+			],
+			"subclassTitle": "AE",
+			"fluff": [
+				{
+					"name": "Specialist",
+					"type": "section",
+					"entries": [
+						"Specialists combine their knowledge of a modern battlefield and their excellent agility to blow away their enemies, literally. Specialists are able to craft specialized bombs that have a form and function that start out similar to grenades but evolve as they craft them further. They use these bombs to demolish any obstacles that would get in their way, often without worry as to their own wellbeing due to the safety mechanisms built into the bomb. Specialists are also highly adaptable and are usually smart enough to know when to blow things up and when to ask questions.",
+						"Some skilled specialists have even found a way to quiet the weapons of the modern battlefield, building things to bring a stealthier component to the loud firearms that define current combat. Specialists have found a way to explode onto the battlefield in other ways too, especially by using the tools in their area of expertise. Specialists have three areas of expertise that they can fit into: the Alchemist, the Demolitionist, and the Mechanist, all of them serve to hone the skills of the Specialists who go down them in one way or another. Alchemists are skilled in the art of not only creating concoctions with various effects, but also reproducing magical spells in their own way. The potions that an alchemist creates can be imbued with the magic of a spell that can aid themselves or an ally. They are also able to create health potions so that themself and their allies can stay fresh during and after battles. Though only one potion can be active at a time for a normal alchemist, they prove to a great boon in times of need. Alchemists have also learned how to effectively use poisons and acids in order to be leave their opponents cowering in fear, which they eventually build up a resistance to themselves.",
+						"Demolitionists are often the type of Specialists that would rather blow things up first and ask questions later, despite what their better sense would tell them to do. These Specialists focus on making their bombs not only much stronger but also more adaptable and will even remove safety features from bombs so that they can blow up when certain special conditions are met, even if they are not present. Demolitionists will use whatever they can to blow up, set fire to, and overall just completely ruin and demolish whatever would stand in their way.",
+						"If Specialists are masters of the modern battlefield, Mechanists seek to be those of the future battlefield. Mechanists wish to understand and advance technology beyond how it currently exists, including the technology used in battle. Every Mechanist has an impressive knowledge of mechanics and will often spend most of their free time tinkering with something. This almost always leads to a further understanding of energy, especially electricity, and to what kind of weapons could be built out of what they are learning. Often Mechanists keep their new super weapons a secret unless you are either close to them or they plan to use it on you, but those that witness them equate them to things that skilled practitioners of magic can do."
+					],
+					"source": "WS"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Alchemist",
+			"shortName": "Alchemist",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassTableGroups": [
+				{
+					"title": "Potions per Spell Level",
+					"subclasses": [
+						{
+							"name": "Alchemist",
+							"source": "WS"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=Specialist: Alchemist}",
+						"{@filter 2nd|spells|level=2|subclass=Specialist: Alchemist}",
+						"{@filter 3rd|spells|level=3|subclass=Specialist: Alchemist}",
+						"{@filter 4th|spells|level=4|subclass=Specialist: Alchemist}",
+						"{@filter 5th|spells|level=5|subclass=Specialist: Alchemist}",
+						"{@filter 6th|spells|level=6|subclass=Specialist: Alchemist}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							3,
+							2,
+							2,
+							1,
+							0,
+							0
+						],
+						[
+							3,
+							2,
+							2,
+							1,
+							0,
+							0
+						],
+						[
+							3,
+							2,
+							2,
+							1,
+							1,
+							0
+						],
+						[
+							3,
+							2,
+							2,
+							1,
+							1,
+							0
+						],
+						[
+							3,
+							2,
+							2,
+							2,
+							1,
+							0
+						],
+						[
+							3,
+							2,
+							2,
+							2,
+							1,
+							0
+						],
+						[
+							3,
+							2,
+							2,
+							2,
+							2,
+							1
+						],
+						[
+							3,
+							2,
+							2,
+							2,
+							2,
+							1
+						]
+					]
+				}
+			],
+			"subclassSpells": [
+				"Armor of Agathys",
+				"Absorb Elements|XGE",
+				"Comprehend Languages",
+				"Detect Magic",
+				"Detect Poison and Disease",
+				"Disguise Self",
+				"Expeditious Retreat",
+				"False Life",
+				"Feather Fall",
+				"Jump",
+				"Longstrider",
+				"Mage Armor",
+				"Protection from Evil and Good",
+				"Sanctuary",
+				"Speak with Animals",
+				"Zephyr Strike|XGE",
+				"Barkskin",
+				"Beast Sense",
+				"Blur",
+				"Darkvision",
+				"Detect Thoughts",
+				"Enhance Ability",
+				"Enlarge/Reduce",
+				"Invisibility",
+				"Lesser Restoration",
+				"Levitate",
+				"Mirror Image",
+				"Nystul's Magic Aura",
+				"Protection from Poison",
+				"See Invisibility",
+				"Spider Climb",
+				"Warding Wind|XGE",
+				"Blink",
+				"Clairvoyance",
+				"Gaseous Form",
+				"Fly",
+				"Haste",
+				"Nondetection",
+				"Protection from Energy",
+				"Remove Curse",
+				"Speak with Dead",
+				"Speak with Plants",
+				"Tongues",
+				"Water Breathing",
+				"Water Walk",
+				"Death Ward",
+				"Divination",
+				"Freedom of Movement",
+				"Greater Invisibility",
+				"Polymorph",
+				"Stoneskin",
+				"Commune with Nature",
+				"Contact Other Plane",
+				"Control Winds|XGE",
+				"Dispel Evil and Good",
+				"Greater Restoration",
+				"Legend Lore",
+				"Telekinesis",
+				"Transmute Rock|XGE",
+				"Scrying",
+				"Seeming",
+				"Skill Empowerment|XGE",
+				"Find the Path",
+				"Investiture of Flame|XGE",
+				"Investiture of Ice|XGE",
+				"Investiture of Stone|XGE",
+				"Investiture of Wind|XGE",
+				"Tasha's Otherworldly Guise|TCE",
+				"True Seeing",
+				"Wind Walk"
+			],
+			"subclassFeatures": [
+				"Potions|Specialist|WS|Alchemist|WS|2",
+				"Apothecary|Specialist|WS|Alchemist|WS|2",
+				"Noxious Bombs|Specialist|WS|Alchemist|WS|7",
+				"Potions of Greater Healing|Specialist|WS|Alchemist|WS|11",
+				"Natural Resistance|Specialist|WS|Alchemist|WS|14",
+				"Potion Chugger|Specialist|WS|Alchemist|WS|18"
+			]
+		},
+		{
+			"name": "Demolitionist",
+			"shortName": "Demolitionist",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Mad Bomber|Specialist|WS|Demolitionist|WS|2",
+				"Light the Fuse|Specialist|WS|Demolitionist|WS|7",
+				"Extra Sharp Shrapnel|Specialist|WS|Demolitionist|WS|11",
+				"Conditional Detonation|Specialist|WS|Demolitionist|WS|14",
+				"Thermite Reaction|Specialist|WS|Demolitionist|WS|18"
+			]
+		},
+		{
+			"name": "Mechanist",
+			"shortName": "Mechanist",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Technological Expert|WS|Mechanist|WS|2",
+				"Dazzler|Specialist|WS|Mechanist|WS|7",
+				"Railgun|Specialist|WS|Mechanist|WS|11",
+				"Analyst|Specialist|WS|Mechanist|WS|14",
+				"Death Ray|Specialist|WS|Mechanist|WS|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "By Land and By Sea",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you have learned how to operate most vehicles rather proficiently, you gain proficiency with vehicles (land) and vehicles (water)."
+			]
+		},
+		{
+			"name": "Bombs",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you gain the ability to specially craft bombs similar to grenades used to damage your enemies. After you finish a long rest you can construct a number of bombs equal to your Specialist class levels + your Intelligence modifier (minimum of 1). It takes one hour to craft all of your bombs. You can buy the materials to make your bombs at most general stores for 1 gold per the materials to make 1 bomb.",
+				"The materials to make 1 bomb weigh half of a pound (Specialists who choose to carry the materials to make multiple bombs with them must take this into consideration when determining their carrying capacity). With your bombs you take an Attack action to make a Special Ranged Weapon Attack that can be thrown up to 60 feet (This Special Ranged Weapon Attack uses your entire action). The target hit by the bomb takes 2d8 bludgeoning from the explosion and every creature within 5 feet of the target must make a Dexterity saving throw against your Specialist Save DC (your Specialist Save DC will be used for other class features that require your target to make a saving throw to resist the feature’s effects), this includes the original target of the bomb. On a failure, affected targets take 2d6 piercing damage from shrapnel, targets suffer no damage taken on a successful save.",
+				"Bombs fail to explode and become inert if they miss, they may not have hit the enemy properly or completely missed their target. Any bombs you do not use before finishing a long rest become inert once you finish a long rest. An inert bomb can not be used until after the interval in which you make your bombs, at which point the inert bomb is renewed and counts as one part of your bomb total for that day. The amount of damage your bombs do increases as you gain levels in this class, as shown in the Bomb Damage column of the Specialist table.",
+				{
+					"type": "abilityDc",
+					"name": "Specialist",
+					"attributes": [
+						"int"
+					]
+				}
+			]
+		},
+		{
+			"name": "Quick Hands",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you gain the ability to use the use object and search for object actions as bonus actions"
+			]
+		},
+		{
+			"name": "Area of Expertise Feature",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you have begun to find what exactly you specialize in as a Specialist and what kind of Specialist you want to become: Alchemist, Demolitionist, or Mechanist. Your choice grants you features at 2nd, 7th, 11th, 14th, and 18th level."
+			]
+		},
+		{
+			"name": "Smoke Bomb",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you have learned how to create smoke bombs to give yourself a tactical advantage on the battlefield. As a bonus action, you can throw a smoke bomb to a point within 60 feet of you. The smoke bomb creates a 10 feet radius sphere of smoke centered on the point you threw it to. The smoke continues to expand after your turn with the radius increasing 5 feet at the start of each of your turns until the fog cloud has reached a 20 feet radius. The sphere spreads around corners, and its area is heavily obscured. It lasts for 1 minute or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. You can not use this feature again until you finish a short or long rest. Smoke Bombs do not count towards your daily total of bombs."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 5,
+			"entries": [
+				"At 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. You can not use this feature to make more than one Bomb Attack."
+			]
+		},
+		{
+			"name": "Explosive Force",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you have learned how to make your bombs have a bigger bang for their buck. You may add your Intelligence modifier to the damage your bombs do."
+			]
+		},
+		{
+			"name": "Area of Expertise Feature",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you gain a feature granted by your Area of Expertise."			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Blast Shield",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 9,
+			"entries": [
+				"At 9th level, you have become quite adept at dodging any damage done by bombs, especially your own. When you are subjected to an explosion that allows you to make a saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. You have advantage on saving throws against your own bombs and other Specialist features."
+			]
+		},
+		{
+			"name": "Improved Bombs",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th, level the radius to which the shrapnel of your bombs will travel to increase from 5 feet to 10 feet."
+			]
+		},
+		{
+			"name": "Area of Expertise Feature",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain a feature granted by your Area of Expertise."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Silencer",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 13,
+			"entries": [
+				"At 13 level, you have invented to the best of your ability a way to quiet your firearm’s noise. When you use a firearm, you can attach a silencer to your firearms that will mask the noise very efficiently, from a range it would be very hard to tell that there was a noise or, if someone did hear, that it was even a firearm and not some noise natural to the area. Other creatures have disadvantage on Wisdom (Perception) checks to hear the noise your silenced firearms make. The silencer however is unwieldy, technical, and somewhat impractical to the point that anyone other than you can not use it efficiently.",
+				"The first time you construct a silencer it comes without any cost due to you having been experimenting with the foundation of it for some time, but if you need to craft another one it requires one day of downtime and 200 gold to represent the cost of materials used."
+			]
+		},
+		{
+			"name": "Area of Expertise Feature",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain a feature granted by your Area of Expertise."
+			]
+		},
+		{
+			"name": "Field Reconnaissance",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The GM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:",
+				{
+					"type": "list",
+					"items": [
+						"Strength score",
+						"Dexterity score",
+						"Constitution score",
+						"Intelligence score",
+						"Wisdom score",
+						"Charisma score",
+						"Class levels (if any) At the GM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Improved Bombs (2)",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 17,
+			"entries": [
+				"At 17th level, the shrapnel damage of your bombs increase to 4d6."
+			]
+		},
+		{
+			"name": "Area of Expertise Feature",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature granted by your Area of Expertise."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Nitroglycerin",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, you have learned how to make a very high impact explosive bomb containing nitroglycerin. When making your bombs you can choose one to have it contain nitroglycerin rather than its normal components. You can throw the nitroglycerin bomb to a spot within 60 feet of you. Every creature within 25 feet radius of that spot must make a Dexterity saving throw. On a failed save, affected creatures suffer 6d6 of piercing damage.",
+				"Additionally, every creature within a 15 feet radius of the detonation point takes 4d8 bludgeoning damage and 4d8 fire damage. The impact also leaves a crater destroying things in the area of detonation, leaves scorch marks in the area, and can be heard by creatures miles away."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Potions",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you learn how to craft potions that contain the ingredients to distill your magic. The potions you craft only contain the basic ingredients needed to house a spell. As an action, you can instill the magic of one of the spells from your alchemist spell list, listed below, into one of the potions.",
+				"Your potions also work differently than a normal spell would in multiple ways; you twist spells to fit your expertise. As a potion, all spells have a range of ‘self’ (unless stated in the spell that the spell only affects you and the range indicates the radius that the spell’s powers emit from you). All spells only affect the creature that drank the potion, even if the spell indicates that it affects multiple creatures and instructs you to choose multiple people.",
+				"You do not need any of the material components for the spells on your list. All potions last until the time limit on the spell is reached (you can not choose to end the spell early).",
+				"You do not need to make concentration checks for spells cast through potions that you or others have used.",
+				"The effect of the potions become inert through spells that would negate magical effects (such as ‘dispel magic’).",
+				"Potions become active from the moment you drink them by taking the ‘use object’ action. Only one potion can be active at a time, if another one of your potions becomes active the effects of the last potion become inert and end immediately.",
+				"Potions that you create can only be used until you finish a long rest, at which point any crafted potions expire and cannot be used after completing a long rest. At the end of a long rest, you have access to a number potions equal to the number of Alchemist spell slots according to your Alchemist level indicated on the Alchemist potion making table.",
+				"To make a potion, you must have an Alchemist spell slot for the appropriate spell level or higher. Your spells gain any improvements from using higher spell slots, if applicable (excluding circumstances that increase how many creatures would be affected by the potion at once).",
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Intelligence is your spellcasting ability for your alchemist spells, since you learn your spells and how to make potions through dedicated study, practice and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for an Alchemist spell you cast.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Apothecary",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you have learned how to properly use tools that are normal for an alchemist or apothecary to use. You gain proficiency with the alchemist supplies, herbalism kit, and poisoner’s kit, if you are not already proficient with them. Additionally, your familiarity with these tools has allowed you the ability to craft healing potions. You can make Potions of Healing that heal for 1d8 hit points, you can make a number of these per short or long rest equal to your Intelligence modifier. It cost 20 gold per potion made to represent materials used."
+			]
+		},
+		{
+			"name": "Noxious Bombs",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you have learned how to add elements to your bombs to cause your opponents even more dismay on the battlefield. Rather than the bludgeoning damage that your bombs normally do, you can choose to have them do either acid or poison damage instead. Additionally, you can convert one of your bombs into a Gas Bomb with the following effects: you throw your bomb to an area within your normal range as an action, the bomb releases a poisonous gas within a 25 feet radius of the spot it landed, the gas lasts 1 minute and any creature that starts its turn in the poisonous gas must make a Constitution saving throw against your Spell Save DC. On a failed save, affected creatures are poisoned for 1 hour. You can not make another gas bomb again using this feature until you finish a long rest."
+			]
+		},
+		{
+			"name": "Potions of Greater Healing",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you have learned how to greatly enhance your Potions of Healing; they now heal for 2d8 + your Intelligence modifier hit points. At 18 level, this increases to 4d8 + your Intelligence modifier hit points and you can make your potions without a cost."
+			]
+		},
+		{
+			"name": "Natural Resistance",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"By 14th level, due to your extended time spent around acids and poisons, your body has built up a resistance to them. You gain resistance to acid and poison damage and have advantage on all saving throws against being poisoned."
+			]
+		},
+		{
+			"name": "Potion Chugger",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you have learned how to keep the effects of your last potion active, even while under the effects of a new one. You can have two separate creatures, including yourself, under the effects of your potions, or two potions affecting yourself at the same time. A creature other than yourself can not be under the effects of two of your potions at the same time, and potions become inactive the same manner as before; when you use a new potion while two are active, the oldest potion’s effects become inactive."
+			]
+		},
+		{
+			"name": "Mad Bomber",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Demolitionist",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you begin to hone your skills as a bomber which allows you to throw your bombs twice the distance, up to 120 feet, that you would normally be able to. You also gain the ability to make an additional number of bombs equal to half of your Specialist level on a short or long rest."
+			]
+		},
+		{
+			"name": "Light the Fuse",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Demolitionist",
+			"subclassSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you have learned how to truly demolish anything you hit with your bombs. Rather than the bludgeoning damage that your bombs normally do, you can choose to have them do either fire or thunder damage instead. Additionally, you can also convert one of your bombs into a Satchel Charge. You can throw the Satchel Charge to an area within your normal range and you can detonate the Satchel Charge as a bonus action. The Satchel Charge has a 15 feet radius from where you threw it and any creature within the radius must make a Dexterity saving throw. Affected targets suffer 4d6 piercing damage and 4d6 fire damage on a failed save, or half damage on a successful one. Then, affected targets within the radius must then succeed a Strength saving throw or be flung 20 feet in the opposite direction of the Satchel Charge. You can not make another Satchel Charge again using this feature until you finish a long rest."
+			]
+		},
+		{
+			"name": "Extra Sharp Shrapnel",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Demolitionist",
+			"subclassSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you have learned how to make your bomb’s shrapnel even deadlier than before. When a creature succeeds the Dexterity saving throw on your bombs' shrapnel piercing damage, they now take half damage."
+			]
+		},
+		{
+			"name": "Conditional Detonation",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Demolitionist",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you can set a condition to detonate your bombs when the chosen condition is met.",
+				"You may set your bombs on a timer, preparing a time for your bombs to detonate (no longer than 24 hours).",
+				"You may also set your bombs to detonate when a certain amount of pressure is put on them (no less than 20 pounds of pressure and no more 600 pounds of pressure). If these bombs do not detonate within 24 hours, they become inert.",
+				"If the bombs you applied conditions to are discovered before they explode, a creature can attempt to disarm them with the DC = 10 + your proficiency bonus + your Intelligence modifier; they must use either thieves tools or the Mechanics skill. If they fail the check to disarm the bomb, the bomb will detonate and they must then make a Dexterity saving throw, creatures that fail the saving throw take the bomb’s full damage, creatures that succeed take half damage."
+			]
+		},
+		{
+			"name": "Thermite Reaction",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Demolitionist",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, as a Demolitionist you have learned how to harness the destructivity of thermite. As an action, you can apply thermite to one creature or object within 5 feet of you. The targeted creatures must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier) to determine how thoroughly the target is doused in thermite. When a creature doused in thermite suffers fire damage, they become ignited. When a creature is ignited, they immediately suffer 4d8 fire damage on a failure, and take half as much on a success. The creature then continues to suffer this damage as a new damage roll at the start of the creature’s turn for 1 minute or until the creature uses two consecutive actions to attempt to put out the flames. You can not use this feature again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Technological Expert",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you have become quite the savant when it comes to dealing with machines and burgeoning technology. If you are not already proficient in the Mechanics skill, or tinker tools, you gain proficiency with them. Your proficiency bonus is doubled for any ability checks you make with the Mechanics skill and tinker tools."
+			]
+		},
+		{
+			"name": "Dazzler",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you have learned how to harness the energy you have been studying and infuse your bombs with it. Rather than the bludgeoning damage that your bombs normally do, you can choose to have them do either lightning or radiant damage instead. Additionally, you can convert one of your bombs to produce a Flare Bomb which the light can blind your enemies. You can throw this bomb the same range as a normal bomb as an action and anyone within 40 feet radius of the flare must make a Constitution saving throw. On a failed save, affected creatures are blinded for 1 minute. You can not make another Flare Bomb again using this feature until you finish a long rest."
+			]
+		},
+		{
+			"name": "Railgun",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, your study of electricity has reached a point that you have begun to understand the powers of electromagnetism and have the ability to harness electromagnetism in order to create a railgun. The first time you construct your Railgun, it is a product of long and arduous work which took place over your entire time spent as a Mechanist, if you ever need to construct a replacement railgun, it will take three days worth of downtime and 4000 gold to represent materials used.",
+				"The railgun is a ranged weapon with a range of 180/400 which does 5d8 + your Dexterity modifier piercing damage and has the 'Loading' property. If there is an enemy directly behind an enemy you hit with the railgun (up to 20 feet behind the creature you hit) you can make an attack roll against that creature and this attack deals 2d8 + your Dexterity modifier piercing damage. You can use your railgun a number of times equal to your Intelligence modifier, after which you must finish a long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Analyst",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you have advantage on ability checks made to repair, disable, or discern the properties and abilities of mechanical devices."
+			]
+		},
+		{
+			"name": "Death Ray",
+			"source": "WS",
+			"className": "Specialist",
+			"classSource": "WS",
+			"subclassShortName": "Mechanist",
+			"subclassSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, your studies and tinkering have culminated into what might be one of the deadliest weapons man has ever created, the Death Ray. The first time you construct your Death Ray it is a product of long and arduous work which took place over your entire time spent as a Mechanist, if you ever need to construct a replacement one it will take one week's worth of downtime and 10,000 gold to represent materials used. As an action, you can fire the Death Ray directly from you in a straight line for 120 feet. Any creature in that line must make a Dexterity saving throw, affected creatures take 8d12 radiant damage on a failed save, half as much on a successful one. The Death Ray disintegrates, sets fire to, or sears anything within the area that is not being worn. You can not use the Death Ray again until you finish a short or long rest."
+			]
+		}
+	]
+}

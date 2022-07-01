@@ -1,0 +1,1311 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Westerland Spirit Maverick",
+				"abbreviation": "WS",
+				"full": "Westerland Spirit Maverick",
+				"authors": [
+					"Tsulex"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.1.2"
+			}
+		],
+		"dateAdded": 1533205140,
+		"dateLastModified": 1533205140
+	},
+	"class": [
+		{
+			"name": "Maverick",
+			"source": "WS",
+			"hd": {
+				"number": 1,
+				"faces": 12
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"startingProficiencies": {
+				"armor":[
+					"light",
+					"medium"
+				],
+				"weapons": [
+					"simple",
+					"martial",
+					"firearms"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"insight",
+								"investigation",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"a {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"a duster, (a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} or (b) a {@item longbow|phb} and 20 {@item arrow|phb}",
+					"(a) a hunting rifle or (b) a bolt-action rifle and 20 rifle ammo",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"_": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"_": [
+							"a duster"
+						],
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							}
+						],
+						"b": [
+							"longbow|phb",
+							{
+								"item": "arrow|phb",
+								"quantity": 10
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"classFeatures": [
+				"Favored Enemy|Maverick|WS|1",
+				"Natural Explorer|Maverick|WS|1",
+				"Fighting Style|Maverick|WS|2",
+				"Maverick’s Fortitude|Maverick|WS|2",
+				"Poultices|Maverick|WS|3",
+				{
+					"classFeature": "Maverick Archetype Feature|Maverick|WS|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Maverick|WS|4",
+				"Extra Attack|Maverick|WS|5",
+				"Vanish|Maverick|WS|5",
+				"Fighting style (2)|Maverick|WS|6",
+				"Experienced Aim|Maverick|WS|6",
+				{
+					"classFeature": "Maverick Archetype Feature|Maverick|WS|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Maverick|WS|8",
+				"Land’s Stride|Maverick|WS|8",
+				"Natural Anti-Venom|Maverick|WS|9",
+				"Ability Score Improvement|Maverick|WS|10",
+				"Hide in Plain Sight|Maverick|WS|10",
+				{
+					"classFeature": "Maverick Archetype Feature|Maverick|WS|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Maverick|WS|12",
+				"Experienced Aim Improvement|Maverick|WS|13",
+				"Field Medic|Maverick|WS|14",
+				{
+					"classFeature": "Maverick Archetype Feature|Maverick|WS|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Maverick|WS|16",
+				"Master of Survival|Maverick|WS|17",
+				"Feral Senses|Maverick|WS|18",
+				"Ability Score Improvement|Maverick|WS|19",
+				"Foe Slayer|Maverick|WS|20"
+			],
+			"subclassTitle": "MA",
+			"fluff": [
+				{
+					"name": "Maverick",
+					"type": "section",
+					"entries": [
+						"Improvisation is the key to survival in the wild. Luckily, Mavericks are experienced in their ability to use the resources around them to their advantage. They are masters of the terrains that they travel and are able to use the surrounding natural resources to create poultices with healing properties. Mavericks are also well versed in weaponry of all kinds, which makes them adaptable to a variety of combat scenarios. They have been weathered by their time in the wilderness and they are stronger for it. Mavericks are about survival, by any means necessary. Mavericks operate within three disciplines of survival: the Arcana Seeker, the Hunter, and the Wrangler.",
+						"The Arcana Seeker has a working knowledge of survival as well as of the arts of magic. This makes them versatile as they have access to a number of arcane spells in addition to their survival skills. Arcana Seekers place an emphasis on intellect rather than wisdom as their arcane abilities require them to understand and memorize the complexities of spellcasting. Also within their well of knowledge is the ability to identify and understand the nuances of the nature of magic and magical devices. Some skilled Arcana Seekers even possess the ability to steal and replicate the spells of enemies used against them.",
+						"The Hunter is a calculated survivalist. They meticulously plan their strategies in order to best prepare themselves for combat scenarios they are most likely to encounter. Hunters of large, individual prey may develop tactics around maximizing focused damage and avoiding the attacks of singular opponents. Hunters of smaller pacts of prey may invoke strategies that affect multiple targets at once and that allow them to escape from being surrounded. Regardless of their prey, Hunters always have a plan.",
+						"The Wrangler has a connection with nature that reaches beyond that of other Mavericks. They possess a primal understanding with animals and beasts, which are bastions of nature itself. Wranglers forge personal bonds with a variety of beasts. These beasts can serve a multitude of purposes like scouts, fighters, or travelling companions. For a Wrangler, their beast companions hold as much (if not more) influence on their lives than their adventuring comrades."
+					],
+					"source": "WS"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Arcana Seeker",
+			"shortName": "Arcana Seeker",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"spellcastingAbility": "int",
+			"casterProgression": "1/3",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Arcana Seeker",
+							"source": "WS"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|subclass=Maverick: Arcana Seeker}",
+						"{@filter Spells Known|spells|subclass=Maverick: Arcana Seeker}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"subclasses": [
+						{
+							"name": "Arcana Seeker",
+							"source": "WS"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=Maverick: Arcana Seeker}",
+						"{@filter 2nd|spells|level=2|subclass=Maverick: Arcana Seeker}",
+						"{@filter 3rd|spells|level=3|subclass=Maverick: Arcana Seeker}",
+						"{@filter 4th|spells|level=4|subclass=Maverick: Arcana Seeker}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassSpells": [
+				"Acid Splash",
+				"Booming Blade|TCE",
+				"Chill Touch",
+				"Control Flames|XGE",
+				"Create Bonfire|XGE",
+				"Dancing Lights",
+				"Fire Bolt",
+				"Frostbite|XGE",
+				"Green-Flame Blade|TCE",
+				"Gust|XGE",
+				"Infestation|XGE",
+				"Light",
+				"Lightning Lure|TCE",
+				"Mage Hand",
+				"Mending",
+				"Message",
+				"Mind Sliver|TCE",
+				"Minor Illusion",
+				"Mold Earth|XGE",
+				"Poison Spray",
+				"Prestidigitation",
+				"Ray of Frost",
+				"Shape Water|XGE",
+				"Shocking Grasp",
+				"Sword Burst|TCE",
+				"Thunderclap|XGE",
+				"Toll the Dead|XGE",
+				"True Strike",
+				"Absorb Elements|XGE",
+				"Alarm",
+				"Armor Of Agathys",
+				"Burning Hands",
+				"Catapult|XGE",
+				"Cause Fear|XGE",
+				"Charm Person",
+				"Color Spray",
+				"Comprehend Languages",
+				"Detect Magic",
+				"Disguise Self",
+				"Earth Tremor|XGE",
+				"Expeditious Retreat",
+				"False Life",
+				"Feather Fall",
+				"Find Familiar",
+				"Tenser's Floating Disk",
+				"Fog Cloud",
+				"Grease",
+				"Tasha's Hideous Laughter",
+				"Ice Knife|XGE",
+				"Identify",
+				"Illusory Script",
+				"Jump",
+				"Longstrider",
+				"Mage Armor",
+				"Magic Missile",
+				"Protection from Evil and Good",
+				"Shield",
+				"Silent Image",
+				"Sleep",
+				"Snare|XGE",
+				"Tasha's Caustic Brew|TCE",
+				"Thunderwave",
+				"Unseen Servant",
+				"Aganazzar's Scorcher|XGE",
+				"Melf's Acid Arrow",
+				"Alter Self",
+				"Arcane Lock",
+				"Nystul's Magic Aura",
+				"Blindness/Deafness",
+				"Blur",
+				"Continual Flame",
+				"Darkness",
+				"Darkvision",
+				"Detect Thoughts",
+				"Dragon's Breath|XGE",
+				"Dust Devil|XGE",
+				"Earthbind|XGE",
+				"Enlarge/Reduce",
+				"Enthrall",
+				"Flaming Sphere",
+				"Gentle Repose",
+				"Gust of Wind",
+				"Hold Person",
+				"Invisibility",
+				"Knock",
+				"Levitate",
+				"Locate Object",
+				"Maximilian's Earthen Grasp|XGE",
+				"Magic Mouth",
+				"Magic Weapon",
+				"Mind Spike|XGE",
+				"Mirror Image",
+				"Misty Step",
+				"Pyrotechnics|XGE",
+				"Ray of Enfeeblement",
+				"Rope Trick",
+				"Snilloc's Snowball Swarm|XGE",
+				"Scorching Ray",
+				"See Invisibility",
+				"Shadow Blade|XGE",
+				"Shatter",
+				"Spider Climb",
+				"Suggestion",
+				"Tasha's Mind Whip|TCE",
+				"Warding Wind|XGE",
+				"Web",
+				"Animate Dead",
+				"Bestow Curse",
+				"Catnap|XGE",
+				"Clairvoyance",
+				"Counterspell",
+				"Dispel Magic",
+				"Enemies Abound|XGE",
+				"Erupting Earth|XGE",
+				"Fear",
+				"Fireball",
+				"Fly",
+				"Flame Arrows|XGE",
+				"Gaseous Form",
+				"Glyph of Warding",
+				"Haste",
+				"Hypnotic Pattern",
+				"Intellect Fortress|TCE",
+				"Life Transference|XGE",
+				"Lightning Bolt",
+				"Melf's Minute Meteors|XGE",
+				"Magic Circle",
+				"Major Image",
+				"Nondetection",
+				"Phantom Steed",
+				"Protection from Energy",
+				"Remove Curse",
+				"Sending",
+				"Sleet Storm",
+				"Slow",
+				"Spirit Shroud|TCE",
+				"Stinking Cloud",
+				"Summon Fey|TCE",
+				"Summon Lesser Demons|XGE",
+				"Summon Shadowspawn|TCE",
+				"Summon Undead|TCE",
+				"Thunder Step|XGE",
+				"Tidal Wave|XGE",
+				"Leomund's Tiny Hut",
+				"Tiny Servant|XGE",
+				"Tongues",
+				"Vampiric Touch",
+				"Wall of Sand|XGE",
+				"Wall of Water|XGE",
+				"Water Breathing",
+				"Arcane Eye",
+				"Banishment",
+				"Evard's Black Tentacles",
+				"Blight",
+				"Charm Monster|XGE",
+				"Watery Sphere|XGE",
+				"Compulsion",
+				"Confusion",
+				"Conjure Minor Elementals",
+				"Control Water",
+				"Dimension Door",
+				"Fabricate",
+				"Mordenkainen's Faithful Hound",
+				"Fire Shield",
+				"Greater Invisibility",
+				"Hallucinatory Terrain",
+				"Ice Storm",
+				"Locate Creature",
+				"Phantasmal Killer",
+				"Polymorph",
+				"Mordenkainen's Private Sanctum",
+				"Otiluke's Resilient Sphere",
+				"Leomund's Secret Chest",
+				"Sickening Radiance|XGE",
+				"Stone Shape",
+				"Storm Sphere|XGE",
+				"Summon Aberration|TCE",
+				"Summon Construct|TCE",
+				"Summon Elemental|TCE",
+				"Vitriolic Sphere|XGE",
+				"Wall of Fire"
+			],
+			"subclassFeatures": [
+				"Spellcasting|Maverick|WS|Arcana Seeker|WS|3",
+				"Arcane Sniper|Maverick|WS|Arcana Seeker|WS|3",
+				"Explorer of Arcana|Maverick|WS|Arcana Seeker|WS|7",
+				"Use Magic Device|Maverick|WS|Arcana Seeker|WS|11",
+				"Arcane Emulation|Maverick|WS|Arcana Seeker|WS|15"
+			]
+		},
+		{
+			"name": "Hunter",
+			"shortName": "Hunter",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"A Hunter’s Mark|Maverick|WS|Hunter|WS|3",
+				"Hunter's Prey|Maverick|WS|Hunter|WS|3",
+				"Defensive Tactics|Maverick|WS|Hunter|WS|7",
+				"Primal Torrent|Maverick|WS|Hunter|WS|11",
+				"Superior Hunter's Defense|Maverick|WS|Hunter|WS|15"
+			]
+		},
+		{
+			"name": "Wrangler",
+			"shortName": "Wrangler",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Maverick's Companions|Maverick|WS|Wrangler|WS|3",
+				"Primeval Assault|Maverick|WS|Wrangler|WS|7",
+				"Superior Taming|Maverick|WS|Wrangler|WS|11",
+				"Absolute Coordination|Maverick|WS|Wrangler|WS|15"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Favored Enemy",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
+				"Choose a type of favored enemy: aberrations, beasts, celestials, constructs, elementals, fiends, giants, monstrosities, oozes, plants, or undead.",
+				"Alternatively, you can select two races of humanoid (such as Tieflings and Rougaru) as favored enemies.",
+				"You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them. When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all. You choose one additional favored enemy, as well as an associated language, at 6th and 14th leveI. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
+			]
+		},
+		{
+			"name": "Natural Explorer",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain or swamp. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you are proficient in. While traveling for 1 hour or more in your favored terrain, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Difficult terrain does not slow your group's travel.",
+						"Your group can not become lost except by magical means.",
+						"Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
+						"If you are traveling alone, you can move stealthily at a normal pace. When you forage, you find twice as much food as you normally would.",
+						"While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+					]
+				},
+				"You choose additional favored terrain types at 6th and 10th level"
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can not take a Fighting Style option more than once, even if you later get to choose again.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Akimbo",
+							"entries": [
+								"When you engage in two weapon fighting, you may use your bonus action to make a ranged weapon attack. You can add your ability modifier to the damage of the second attack."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Defense",
+							"entries": [
+								"While you are wearing armor, you gain a +1 bonus to your AC."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dual-Weapon Fighting",
+							"entries": [
+								"When you engage in two-weapon fighting while you are wielding a melee weapon in one hand and a ranged weapon in the other, you can add your ability modifier to the damage of the second attack and you gain a +2 bonus to damage rolls with the weapon in your main hand."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dueling",
+							"entries": [
+								"When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Great Weapon Fighting",
+							"entries": [
+								"When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the twohanded or versatile property for you to gain this benefit."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Marksman",
+							"entries": [
+								"You gain a +2 bonus to attack rolls you make with ranged weapons."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Rifleman",
+							"entries": [
+								"When you roll a 1 or 2 on a damage die for an attack you make with a ranged weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The ranged weapon must have the two-handed property for you to gain this benefit."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Two-Weapon Fighting",
+							"entries": [
+								"When you engage in two-weapon melee fighting, you can add your ability modifier to the damage of the second attack."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Maverick’s Fortitude",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, whenever you roll Hit Dice during a short rest you may add your Wisdom modifier in addition to your Constitution modifier to the hit points you regain for each Hit Die."
+			]
+		},
+		{
+			"name": "Poultices",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you can create herbal poultices that have healing power comparable to some potions. You can spend 1 hour gathering herbs and preparing these herbal poultices, using treated bandages to create a number of such poultices equal to your Wisdom modifier (minimum 1). You can carry a number of poultices at one time equal to your Wisdom modifier (minimum 1). The poultices you create cannot be applied by anyone but you. After 24 hours, any poultices that you have not used lose their potency. You can spend 1 minute applying one of your poultices to a wounded creature, thereby expending its use. That creature regains 1d6 hit points for every two Maverick class levels you have (rounded up)."
+			]
+		},
+		{
+			"name": "Maverick Archetype Feature",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you choose an archetype that you strive to emulate: Arcana Seeker, Hunter, and Wrangler, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 5,
+			"entries": [
+				"At 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Vanish",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 5,
+			"entries": [
+				"At 5th level, you can use the Hide action as a bonus action on your turn. Also, you can not be tracked by non-magical means, unless you choose to leave a trail."
+			]
+		},
+		{
+			"name": "Fighting Style (2)",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you can choose a second option from the Fighting Style class feature."
+			]
+		},
+		{
+			"name": "Experienced Aim",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, your familiarity with your enemies' weak spots allows you to exploit them and more easily bypass their defenses. you gain a +1 bonus to any attack rolls made against your favored enemies."
+			]
+		},
+		{
+			"name": "Maverick Archetype Feature",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you gain a feature granted by your Maverick Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Land’s Stride",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 8,
+			"entries": [
+				"At 8th level, moving through difficult terrain costs you no extra movement. You can also pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard. In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement."
+			]
+		},
+		{
+			"name": "Natural Anti-Venom",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 9,
+			"entries": [
+				"At 9th level, you have advantage on saving throws against poison and have resistance to poison damage. Additionally, you can use one of your poultices to cure one poison effect on the creature you are applying it to, in addition to restoring hit points."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Hide in Plain Sight",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, or other naturally occurring materials with which to create your camouflage. Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit. Additionally, you can attempt to hide using this feature even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+			]
+		},
+		{
+			"name": "Maverick Archetype Feature",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 10th level, you gain a feature granted by your Maverick Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Experienced Aim Improvement",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 13,
+			"entries": [
+				"This bonus increases to +2 at 13th level."
+			]
+		},
+		{
+			"name": "Field Medic",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you have become extremely skilled at applying poultices. The amount of time to apply a poultice is now one action."
+			]
+		},
+		{
+			"name": "Maverick Archetype Feature",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 14th level, you gain a feature granted by your Maverick Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Master of Survival",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 17,
+			"entries": [
+				"At 17th level, you have refined your survival skills until they approach perfection. if you are not already proficient in Survival, you gain proficiency with the Survival skill. Whenever you make a Wisdom (Survival) check you can treat a d20 roll of 9 or lower as a 10."
+			]
+		},
+		{
+			"name": "Feral Senses",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain preternatural senses that help you fight creatures you can not see. When you attack a creature you can not see, your inability to see it does not impose disadvantage on your attack rolls against it. You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature is not hidden from you and you are not blinded or deafened."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Foe Slayer",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, you become an unparalleled hunter of your enemies, whenever you make a successful attack against one of your favored foes you can add your Wisdom modifier to your damage rolls."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Spellcasting",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Arcana Seeker",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you augment your natural prowess with the ability to cast spells.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"You learn two cantrips of your choice from the Magus spell list. You learn an additional Magus cantrip of your choice at 10th level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Arcana Seeker Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest. For example, if you know the 1st level spell shield and have a 1st level and a 2nd level spell slot available, you can cast shield using either slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st-level and higher",
+					"entries": [
+						"You know three 1st level Magus spells of your choice. The Spells Known column of the Arcane Seeker Spellcasting table shows when you learn more Magus spells of 1st level or higher. Whenever you gain a level in this class, you can replace one of the Magus spells you know with another spell of your choice from the Magus spell list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Intelligence is your spellcasting ability for your Arcana Seeker spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for an Arcana Seeker spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Sniper",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Arcana Seeker",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, when you hit a creature with a ranged weapon attack, you can spend one Arcana Seeker spell slot to deal force damage to the target, in addition to the weapon's damage. The additional damage is 2d6 for a 1st-level spell slot, plus 1d6 for each spell level higher than 1st."
+			]
+		},
+		{
+			"name": "Explorer of Arcana",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Arcana Seeker",
+			"subclassSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, your search for arcane treasures and secrets has led you to gain an uncanny knack in identifying things of an arcane nature as well as finding the spots in which they hide. If you are not already proficient in the Arcana skill or the Investigation skill you gain proficiency with those skills, your proficiency bonus is doubled for any ability checks you make with the Arcana and Investigation skills."
+			]
+		},
+		{
+			"name": "Use Magic Device",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Arcana Seeker",
+			"subclassSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items."
+			]
+		},
+		{
+			"name": "Arcane Emulation",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Arcana Seeker",
+			"subclassSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, you gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster. Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can use your reaction to make an Intelligence (Arcana) check. The DC of the check is equal to the (Spells saving throw DC + the Spell Level) or (the Spell Attack roll + the Spell Level), depending on the type of spell casted. If you succeed the ability check, you can use this spell once without having to expend a spell slot (it does not need to be a Magus spell). The spell is cast at the same level it was originally casted at. You can use this feature a number of times equal to your Intelligence Modifier and you regain all uses of this feature when you finish a long rest."
+			]
+		},
+		{
+			"name": "A Hunter’s Mark",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Hunter",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you can pick out a creature's weak points and you begin to pick up at where you can hit a creature to deal extra damage. You can cast the Hunter’s Mark spell a number of times equal to your Wisdom modifier. You do not have to provide any of the components to cast these spells. You regain all uses of this feature when you finish a long rest."
+			]
+		},
+		{
+			"name": "Hunter's Prey",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Hunter",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you gain one of the following features of your choice:",
+				{
+					"type": "entries",
+					"name": "Colossus Slayer",
+					"entries": [
+						"Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it is below its hit point maximum. You can deal this extra damage only once per turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Giant Killer",
+					"entries": [
+						"When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Horde Breaker",
+					"entries": [
+						"Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
+					]
+				}
+			]
+		},
+		{
+			"name": "Defensive Tactics",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Hunter",
+			"subclassSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you gain one of the following features of your choice:",
+				{
+					"type": "entries",
+					"name": "Escape the Horde",
+					"entries": [
+						"Opportunity attacks against you are made with disadvantage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Multiattack Defense",
+					"entries": [
+						"When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Steel Will",
+					"entries": [
+						"You have advantage on saving throws against being frightened."
+					]
+				}
+			]
+		},
+		{
+			"name": "Primal Torrent",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Hunter",
+			"subclassSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain one of the following features of your choice:",
+				{
+					"type": "entries",
+					"name": "Volley",
+					"entries": [
+						"You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammo for each target, as normal, and you make a separate attack roll for each target. If you are using a firearm you can not use any of your attacks that you have using this feature to reload your weapon."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Whirlwind Attack",
+					"entries": [
+						"You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target."
+					]
+				}
+			]
+		},
+		{
+			"name": "Superior Hunter's Defense",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Hunter",
+			"subclassSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, you gain one of the following features of your choice:",
+				{
+					"type": "entries",
+					"name": "Evasion",
+					"entries": [
+						"You can nimbly dodge out of the way of certain area effects. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Stand Against the Tide",
+					"entries": [
+						"When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+					]
+				}
+			]
+		},
+		{
+			"name": "Maverick's Companions",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Wrangler",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you gain the ability to fully tame beast companions that will train and listen to your commands fully",
+				"To tame a companion it must be a beast. You must make a Wisdom (Animal Handling) check. If you do not have proficiency with the Animal Handling ability, you gain proficiency with it. The DC for the ability check is equal to the beasts’ Constitution score + their CR (rounded up). If you succeed your ability check, you must spend at least 24 hours within the next 7 days with the beast before it becomes your companion. You can tame multiple companion beasts at one time. However, the total CR of beasts you can tame at once must be less than or equal to ¼ of your Maverick class levels. Your companions obey your commands as best as they can. They take their turns on your initiative, though they do not take any actions unless you command them to. On your turn, you can verbally command all of your Companions where to move (no action required by you). You can use your action to verbally command them to take the Attack, Dash, Disengage, Dodge, or Help action. While traveling through your favored terrain with only your companions, you can move stealthily at a normal pace."
+			]
+		},
+		{
+			"name": "Primeval Assault",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Wrangler",
+			"subclassSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, your Companions can add your Proficiency bonus to their attack rolls. Additionally, your Companions’ attacks count as magical for the purpose of overcoming resistances and immunities."
+			]
+		},
+		{
+			"name": "Superior Taming",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Wrangler",
+			"subclassSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, you have perfected the regiment you use to train your Companions and they have grown stronger as a result. You can add your Wisdom modifier to your Companions’ AC and Damage Rolls."
+			]
+		},
+		{
+			"name": "Absolute Coordination",
+			"source": "WS",
+			"className": "Maverick",
+			"classSource": "WS",
+			"subclassShortName": "Wrangler",
+			"subclassSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, you and your Companions have become so intune with each other that your coordination in battle has become much more effective. Instead of using your action to command your Companions, you can use your bonus action."
+			]
+		}
+	]
+}

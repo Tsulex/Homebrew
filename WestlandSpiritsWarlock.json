@@ -1,0 +1,1361 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Westerland Spirit Warlocke",
+				"abbreviation": "WS",
+				"full": "Westerland Spirit Warlocke",
+				"authors": [
+					"Tsulex"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.1.2"
+			}
+		],
+		"dateAdded": 1533205140,
+		"dateLastModified": 1533205140
+	},
+	"class": [
+		{
+			"name": "Warlocke",
+			"source": "WS",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "pact",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12,
+				13,
+				13,
+				14,
+				14,
+				15,
+				15
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Eldritch Invocations",
+					"featureType": [
+						"EI"
+					],
+					"progression": [
+						0,
+						2,
+						2,
+						2,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						5,
+						6,
+						6,
+						6,
+						7,
+						7,
+						7,
+						8,
+						8,
+						8
+					]
+				},
+				{
+					"name": "Pact Boon",
+					"featureType": [
+						"PB"
+					],
+					"progression": {
+						"3": 1
+					}
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"derringer"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"deception",
+								"history",
+								"intimidation",
+								"investigation",
+								"nature",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"a {@item quarterstaff|phb}",
+					"(a) a derringer and 20 pistol ammo or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"_": [
+							"quarterstaff|phb"
+						]
+					},
+					{
+						"a": [
+							"derringer",
+							"20 pistol ammo"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"arcane focus|phb"
+						]
+					},
+					{
+						"a": [
+							"scholar's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Warlocke}",
+						"Spells Known",
+						"Spell Slots",
+						"Slot Level",
+						"{@filter Invocations Known|optionalfeatures|feature type=EI}"
+					],
+					"rows": [
+						[
+							2,
+							2,
+							1,
+							"{@filter 1st|spells|level=1|class=Warlocke}",
+							0
+						],
+						[
+							2,
+							3,
+							2,
+							"{@filter 1st|spells|level=1|class=Warlocke}",
+							2
+						],
+						[
+							2,
+							4,
+							2,
+							"{@filter 2nd|spells|level=2|class=Warlocke}",
+							2
+						],
+						[
+							3,
+							5,
+							2,
+							"{@filter 2nd|spells|level=2|class=Warlocke}",
+							2
+						],
+						[
+							3,
+							6,
+							3,
+							"{@filter 3rd|spells|level=3|class=Warlocke}",
+							3
+						],
+						[
+							3,
+							7,
+							3,
+							"{@filter 3rd|spells|level=3|class=Warlocke}",
+							3
+						],
+						[
+							3,
+							8,
+							3,
+							"{@filter 4th|spells|level=4|class=Warlocke}",
+							4
+						],
+						[
+							3,
+							9,
+							3,
+							"{@filter 4th|spells|level=4|class=Warlocke}",
+							4
+						],
+						[
+							3,
+							10,
+							4,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							5
+						],
+						[
+							4,
+							10,
+							4,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							5
+						],
+						[
+							4,
+							11,
+							4,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							5
+						],
+						[
+							4,
+							11,
+							4,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							6
+						],
+						[
+							4,
+							12,
+							5,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							6
+						],
+						[
+							4,
+							12,
+							5,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							6
+						],
+						[
+							4,
+							13,
+							5,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							7
+						],
+						[
+							4,
+							13,
+							6,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							7
+						],
+						[
+							4,
+							14,
+							6,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							7
+						],
+						[
+							4,
+							14,
+							6,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							8
+						],
+						[
+							4,
+							15,
+							7,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							8
+						],
+						[
+							4,
+							15,
+							7,
+							"{@filter 5th|spells|level=5|class=Warlocke}",
+							8
+						]
+					]
+				}
+			],
+			"classSpells": [
+				"Booming Blade|TCE",
+				"Chill Touch",
+				"Create Bonfire|XGE",
+				"Eldritch Blast",
+				"Frostbite|XGE",
+				"Green-Flame Blade|TCE",
+				"Infestation|XGE",
+				"Lightning Lure|TCE",
+				"Mage Hand",
+				"Magic Stone|XGE",
+				"Mind Sliver|TCE",
+				"Minor Illusion",
+				"Poison Spray",
+				"Prestidigitation",
+				"Sword Burst|TCE",
+				"Thunderclap|XGE",
+				"Toll the Dead|XGE",
+				"True Strike",
+				"Charm Person",
+				"Cause Fear|XGE",
+				"Chaos Bolt|XGE",
+				"Comprehend Languages",
+				"Expeditious Retreat",
+				"Hellish Rebuke",
+				"Illusory Script",
+				"Protection from Evil and Good",
+				"Unseen Servant",
+				"Darkness",
+				"Earthbind|XGE",
+				"Enthrall",
+				"Hold Person",
+				"Invisibility",
+				"Mind Spike|XGE",
+				"Mirror Image",
+				"Misty Step",
+				"Ray of Enfeeblement",
+				"Shadow Blade|XGE",
+				"Shatter",
+				"Spider Climb",
+				"Suggestion",
+				"Counterspell",
+				"Dispel Magic",
+				"Enemies Abound|XGE",
+				"Fear",
+				"Fly",
+				"Gaseous Form",
+				"Hypnotic Pattern",
+				"Intellect Fortress|TCE",
+				"Magic Circle",
+				"Major Image",
+				"Remove Curse",
+				"Spirit Shroud|TCE",
+				"Summon Fey|TCE",
+				"Summon Lesser Demons|XGE",
+				"Summon Shadowspawn|TCE",
+				"Summon Undead|TCE",
+				"Thunder Step|XGE",
+				"Tongues",
+				"Vampiric Touch",
+				"Banishment",
+				"Blight",
+				"Charm Monster|XGE",
+				"Dimension Door",
+				"Elemental Bane|XGE",
+				"Hallucinatory Terrain",
+				"Shadow of Moil|XGE",
+				"Sickening Radiance|XGE",
+				"Summon Aberration|TCE",
+				"Summon Greater Demon|XGE",
+				"Contact Other Plane",
+				"Danse Macabre|XGE",
+				"Dream",
+				"Enervation|XGE",
+				"Far Step|XGE",
+				"Hold Monster",
+				"Infernal Calling|XGE",
+				"Negative Energy Flood|XGE",
+				"Scrying",
+				"Synaptic Static|XGE",
+				"Wall of Light|XGE",
+				"Circle of Death",
+				"Conjure Fey",
+				"Create Undead",
+				"Eyebite",
+				"Flesh to Stone",
+				"Forbiddance",
+				"Investiture of Flame|XGE",
+				"Investiture of Ice|XGE",
+				"Investiture of Stone|XGE",
+				"Investiture of Wind|XGE",
+				"Mass Suggestion",
+				"Mental Prison|XGE",
+				"Scatter|XGE",
+				"Soul Cage|XGE",
+				"Summon Fiend|TCE",
+				"Tasha's Otherworldly Guise|TCE",
+				"True Seeing",
+				"Crown of Stars|XGE",
+				"Dream of the Blue Veil|TCE",
+				"Etherealness",
+				"Finger of Death",
+				"Forcecage",
+				"Plane Shift",
+				"Power Word Pain|XGE",
+				"Reverse Gravity",
+				"Demiplane",
+				"Dominate Monster",
+				"Feeblemind",
+				"Glibness",
+				"Maddening Darkness|XGE",
+				"Power Word Stun",
+				"Astral Projection",
+				"Blade of Disaster|TCE",
+				"Foresight",
+				"Imprisonment",
+				"Power Word Kill",
+				"Psychic Scream|XGE",
+				"True Polymorph"
+			],
+			"classFeatures": [
+				"Pact Magic|Warlocke|WS|1",
+				{
+					"classFeature": "Otherworldly Patron Feature|Warlocke|WS|1",
+					"gainSubclassFeature": true
+				},
+				"Eldritch Invocations|Warlocke|WS|2",
+				"Pact Boon|Warlocke|WS|3",
+				"Ability Score Improvement|Warlocke|WS|4",
+				{
+					"classFeature": "Otherworldly Patron Feature|Warlocke|WS|6",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warlocke|WS|8",
+				{
+					"classFeature": "Otherworldly Patron Feature|Warlocke|WS|10",
+					"gainSubclassFeature": true
+				},
+				"Mystic Arcanum (6th level)|Warlocke|WS|11",
+				"Ability Score Improvement|Warlocke|WS|12",
+				"Mystic Arcanum (7th level)|Warlocke|WS|13",
+				{
+					"classFeature": "Otherworldly Patron Feature|Warlocke|WS|14",
+					"gainSubclassFeature": true
+				},
+				"Mystic Arcanum (8th level)|Warlocke|WS|15",
+				"Ability Score Improvement|Warlocke|WS|16",
+				"Mystic Arcanum (9th level)|Warlocke|WS|17",
+				"Ability Score Improvement|Warlocke|WS|19",
+				"Black Magic|Warlocke|WS|20"
+			],
+			"subclassTitle": "OP",
+			"fluff": [
+				{
+					"name": "Warlocke",
+					"type": "section",
+					"entries": [
+						"The Warlock uses ancient arcane ability to unleash power that most mortals could only dream of having. Though they do increase their powers through hard work and discipline like others, they draw their powers from ancient, mysterious, and immensely powerful entities that have shown them favor.",
+						"These powers are thrust upon some Warlocks, some bargain with their would-be patron, or a servant of them, and others work hard to garner enough favor to be gifted the power that they seek. The power of the Warlock gives those that use it choices as to the exact nature of their powers, from the spells they use, to the invocations they make, to the pact boons they receive. The pact boons Warlock receive can be the pact of the armament which gives the user a conventional weapon to match the powers received from their patrons, the pact of the chain which deems you the master over a creature that not only serves your patron but now serves under you completely, or the pact of the tome which enhances your spellcasting prowess. The final and most important choice a Warlock must make is the pact itself and which patron they will be working under, as all of them have advantages and drawbacks of some kind. Warlocks can invoke pacts with a variety of powerful entities: the Devil, the Eldritch Remnant, the Loa, or the Void.",
+						"The Devil as patrons are sly by nature and will often make bargains that allow you to gain powers in return for something important. This item or aspect may draw its importance not because they want it, but because someone, perhaps even yourself, does. They require sacrifices that they know they can use later, and they frequently opt to take the long con. The deals they make ensnare many into deals that often seem too good to be true, because they are. Though you will gain great power and skill from your pact, often the price you paid will not even be remotely equivalent. Sometimes lesser servants of The Devil will form pacts themselves, but the power all derives from the same source and the outcome is always the same.",
+						"The Eldritch Remnants are ancient, powerful bodies of magical energy. These cosmic fields have been left to fester for millenia. Over the course of time, they have grown to massive reserves of potential arcane energy. They have grown powerful enough to form their own consciousness and agency. Though they can not act in their own right, Eldritch Remnants impose their influence through those who have borrowed from their massive arcane reserves. Because Eldritch Remnants have no control of their own cosmic bodies, they are often very controlling of their detractors’ actions. Their goals are often fueled by their desire for a physical form. Those who have taken the Eldritch Remnant as a patron will often be given obscure tasks which seem fruitless but will build upon the work of other detractors and ultimately contribute to the Eldritch Remnant’s larger plans.",
+						"The Loa exist as powerful spirits, some seeking to guide, others seeking to grant luck (good or bad), and others seeking only further their own goals. The one thing that links them together is that they are all very macabre in nature and while it might seem evil to some to them, it is just how they function and some mean no harm by it. Many Lao seek to help their followers, who revere them as gods in their own rights, though their practices may seem odd and undesirable to outsiders. Just as many Loa are extremely dark entities though pleasure themselves through death and suffering. Sometimes being able to tell the difference between which Loa is which is impossible.",
+						"The least is known about The Void than any of the other patrons, which seems impossible considering the Eldritch Remnants, but at least things are sometimes comprehensible through the gibbering madness of those that chose to study them. The Void however, has few that have had any interactions with it and survived to tell the tale. Those that do survive only speak of a soul crushing black abyss that seeks to envelop all that is into itself. Though some of the Warlocks that make their pacts with the Void follow these ideals, others just thirst for powers. For some it is unknown why The Void gave them these powers, other than that the Void may be seeking to further its horrific and mysterious goals."
+					],
+					"source": "WS"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "The Devil",
+			"shortName": "Devil",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"burning hands",
+							"command"
+						],
+						"s2": [
+							"scorching ray",
+							"suggestion"
+						],
+						"s3": [
+							"fireball",
+							"compulsion"
+						],
+						"s4": [
+							"fire shield",
+							"wall of fire"
+						],
+						"s5": [
+							"flame strike",
+							"hallow"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The Devil|Warlocke|WS|Devil|WS|1",
+				"Deal with the Devil|Warlocke|WS|Devil|WS|1",
+				"Shrewd Minded|Warlocke|WS|Devil|WS|1",
+				"Light Bearer|Warlocke|WS|Devil|WS|6",
+				"Fiendish Resilience|Warlocke|WS|Devil|WS|10",
+				"Hurled Through Hell|Warlocke|WS|Devil|WS|14"
+			]
+		},
+		{
+			"name": "The Eldritch Remnant",
+			"shortName": "Eldritch Remnant",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"identify",
+							"magic missile"
+						],
+						"s2": [
+							"levitate",
+							"magic mouth"
+						],
+						"s3": [
+							"counterspell",
+							"dispel magic"
+						],
+						"s4": [
+							"arcane eye",
+							"dimension door"
+						],
+						"s5": [
+							"legend lore",
+							"telekinesis"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The Eldritch Remnant|Warlocke|WS|Eldritch Remnant|WS|1",
+				"Spell Recharge|Warlocke|WS|Eldritch Remnant|WS|1",
+				"Arcane Aura|Warlocke|WS|Eldritch Remnant|WS|6",
+				"Eldritch Vitality|Warlocke|WS|Eldritch Remnant|WS|10",
+				"Magical Discharge|Warlocke|WS|Eldritch Remnant|WS|14"
+			]
+		},
+		{
+			"name": "The Loa",
+			"shortName": "Loa",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"hex",
+							"unseen servant"
+						],
+						"s2": [
+							"blindness/deafness",
+							"hold person"
+						],
+						"s3": [
+							"animate dead",
+							"speak with the dead"
+						],
+						"s4": [
+							"fabricate",
+							"polymorph"
+						],
+						"s5": [
+							"cloudkill",
+							"contagion"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The Loa|Warlocke|WS|Loa|WS|1",
+				"Luck of the Spirits|Warlocke|WS|Loa|WS|1",
+				"Voodoo Doll|Warlocke|WS|Loa|WS|6",
+				"Hoodoo, Heals, and Hexes|Warlocke|WS|Loa|WS|10",
+				"Friends from the Other Side|Warlocke|WS|Loa|WS|14"
+			]
+		},
+		{
+			"name": "The Void",
+			"shortName": "Void",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"inflict wounds",
+							"sleep"
+						],
+						"s2": [
+							"darkness",
+							"silence"
+						],
+						"s3": [
+							"fear",
+							"hunger of hadar"
+						],
+						"s4": [
+							"banishment",
+							"Otiluke's Resilient Sphere"
+						],
+						"s5": [
+							"antilife shell",
+							"wall of force"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The Void|Warlocke|WS|Void|WS|1",
+				"Bleak Emptiness|Warlocke|WS|Void|WS|1",
+				"Crushing Aura|Warlocke|WS|Void|WS|6",
+				"Crushing Force|Warlocke|WS|Void|WS|10",
+				"One with the Void|Warlocke|WS|Void|WS|14"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Pact Magic",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"Your arcane research and the magic bestowed on you by your patron have given you facility with spells.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"You know two cantrips of your choice from the Warlock spell list. You learn additional Warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Drawing arcane power from your pact, you can cast spells that reflect the essence of your otherworldly patron. See chapter 10 of the PHB for the general rules of spellcasting and chapter 5 of this document for the Warlock spell list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Warlock table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your Warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest. For example, when you are 5th level, you have two 3rdlevel spell slots. To cast the 1st-level spell thunderwave, you must spend one of those slots, and you cast it as a 3rd-level spell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st level and higher",
+					"entries": [
+						"At 1st level, you know two 1st-level spells of your choice from the Warlock spell list. The Spells Known column on the Warlock table shows when you learn more Warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what is shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new Warlock spell, which can be 1st, 2nd, or 3rd level. Additionally, when you gain a level in this class, you can choose one of the Warlock spells you know and replace it with another spell from the Warlock spell list, which also must be of a level for which you have spell slots."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Charisma is your spellcasting ability for your Warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a Warlock spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use an arcane focus as a spellcasting focus for your Warlock spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Otherworldly Patron Feature",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you have struck a bargain with an otherworldly being of your choice: The Devil, The Eldritch Remnant, The Loa, or The Void each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
+			]
+		},
+		{
+			"name": "Eldritch Invocations",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, in your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability. You gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain Warlock levels, you gain additional invocations of your choice, as shown in the invocations known column of the Warlock table. Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level."
+			]
+		},
+		{
+			"name": "Pact Boon",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice:",
+				{
+					"type": "entries",
+					"name": "Pact of the Chain",
+					"entries": [
+						"You learn the Find Familiar spell and can cast it as a ritual.",
+						"The spell does not count against your number of spells known. When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, sprite, or void ooze. Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pact of the Blade",
+					"entries": [
+						"You can use your action to create a pact weapon in your empty hand. You can choose the form that this weapon takes each time you create it (a ranged weapon does not come with ammo, you must have ammo for the weapon). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to non-magical attacks and damage. Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die. You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can not affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pact of the Chain",
+					"entries": [
+						"Your patron gives you a grimoire. When you gain this feature, choose three cantrips from any class’s spell list. While the book is on your person, you can cast those cantrips at will.",
+						"They do not count against your number of cantrips known. If you lose your grimoire, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Otherworldly Patron Feature",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature granted by your Otherworldly Patron."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Otherworldly Patron Feature",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain a feature granted by your Otherworldly Patron."
+			]
+		},
+		{
+			"name": "Mystic Arcanum (6th level)",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the Warlock spell list as this arcanum. You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again. At higher levels, you gain more Warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Mystic Arcanum (7th level)",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 13,
+			"entries": [
+				"At 13th level, your patron bestows upon you a magical secret called an arcanum. Choose one 7th-level spell from the Warlock spell list as this arcanum. You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Otherworldly Patron Feature",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain a feature granted by your Otherworldly Patron."
+			]
+		},
+		{
+			"name": "Mystic Arcanum (8th level)",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, your patron bestows upon you a magical secret called an arcanum. Choose one 8th-level spell from the Warlock spell list as this arcanum. You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Mystic Arcanum (9th level)",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 17,
+			"entries": [
+				"At 17th level, your patron bestows upon you a magical secret called an arcanum. Choose one 9th-level spell from the Warlock spell list as this arcanum. You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Black Magic",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, you can increase the power of your spells by letting in more of your patron’s power and overcharging yourself with your patron’s magical energy. When you use a Warlock class feature or cast a Warlock spell that uses one of your spell slots that deals damage, you can deal maximum damage with it. The first time you do so, you suffer no adverse effects. If you use this feature again before you finish a long rest, you take 10d6 necrotic damage immediately after using this feature. Each time you use this feature again before finishing a long rest, the necrotic damage increases by 8d6. This damage ignores resistance and immunity."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Devil",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Devil",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"Deals with the infernal",
+				{
+					"type": "entries",
+					"name": "Expanded Spell List",
+					"entries": [
+						"The Devil lets you choose from an expanded list of spells when you learn a Warlock spell. The following spells are added to the warlock spell list for you.",
+						{
+							"type": "table",
+							"caption": "Devil Expanded Spells",
+							"colLabels": [
+								"Spell Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell burning hands}, {@spell command}"
+								],
+								[
+									"2nd",
+									"{@spell scorching ray}, {@spell suggestion}"
+								],
+								[
+									"3rd",
+									"{@spell fireball}, {@spell compulsion}"
+								],
+								[
+									"4th",
+									"{@spell fire shield}, {@spell wall of fire}"
+								],
+								[
+									"5th",
+									"{@spell flame strike}, {@spell hallow}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Deal with the Devil",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Devil",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, the deal with your devil has afforded you some kind of exceptional ability. Choose a skill or tool of your choice that you are not proficient in and you gain proficiency in it, you then also choose a skill or tool (it can be the same skill or tool this feature gave you proficiency in), your proficiency bonus is doubled for any ability check you make with the skill or tool you have chosen."
+			]
+		},
+		{
+			"name": "Shrewd Minded",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Devil",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, the pact with your devil makes it so being charmed by other lesser beings is much harder. You gain advantage on all saving throws made against being charmed."
+			]
+		},
+		{
+			"name": "Light Bearer",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Devil",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, the pact you have made with your patron has given you insight into better use of the tools your devil has given you. When you use a spell that does fire or radiant damage you may add your Charisma modifier to the damage roll."
+			]
+		},
+		{
+			"name": "Fiendish Resilience",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Devil",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silvered weapons ignores this resistance."
+			]
+		},
+		{
+			"name": "Hurled Through Hell",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Devil",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape. At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d10 psychic damage as it reels from its horrific experience. Once you use this feature, you can not use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "The Eldritch Remnant",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Eldritch Remnant",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"Deals with ancient arcanum",
+				{
+					"type": "entries",
+					"name": "Expanded Spell List",
+					"entries": [
+						"The Eldritch Remnant lets you choose from an expanded list of spells when you learn a Warlock spell. The following spells are added to the warlock spell list for you.",
+						{
+							"type": "table",
+							"caption": "Eldritch Remnant Expanded Spells",
+							"colLabels": [
+								"Spell Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell identify}, {@spell magic missile}"
+								],
+								[
+									"2nd",
+									"{@spell levitate}, {@spell magic mouth}"
+								],
+								[
+									"3rd",
+									"{@spell counterspell}, {@spell dispel magic}"
+								],
+								[
+									"4th",
+									"{@spell arcane eye}, {@spell dimension door}"
+								],
+								[
+									"5th",
+									"{@spell legend lore}, {@spell telekinesis}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spell Recharge",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Eldritch Remnant",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, your patron’s power overflows within you, allowing you to regain use of your magic without even resting. You regain a Warlock Spell Slot for every 8 - your Charisma modifier hours since you have finished your last short or long rest. If you already have your maximum number of Warlock spell slots you can not regain a spell slot until one has been used."
+			]
+		},
+		{
+			"name": "Arcane Aura",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Eldritch Remnant",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, the magic that your patron has bestowed upon has begun to seep out and is now creating a magical aura around you. This aura allows you to always perceive magic around you and cut down the magical defenses of those that oppose you. Your Arcane Aura’s range has a 15 feet radius and within that radius, all creatures have disadvantage on 52 CHAPTER 2 | CLASSES saving throws against your Warlock spells. Additionally, you are always under the effects of detect magic within that 15 feet radius. The radius of your aura increases to 30 feet at 14th level."
+			]
+		},
+		{
+			"name": "Eldritch Vitality",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Eldritch Remnant",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you have learned to bolster your arcane defenses immensely. As a bonus action, you can gain resistance to all magical damage, but doing so leaves you vulnerable to physical attacks. While you use this feature, you have vulnerability to all non-magical bludgeoning, piercing, and slashing damage. You can stop the use of this feature as a bonus action."
+			]
+		},
+		{
+			"name": "Magical Discharge",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Eldritch Remnant",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain the ability to create a reactive magical explosion when you are damaged by a spell. Whenever you take magical damage, you can use your reaction to make every creature within 30 feet of you make a Dexterity saving throw against your Warlock spell save DC. On a success, a creature takes damage equal to Warlock level + your Charisma modifier, on a failure they take double that damage. Once you use this feature you must finish a long rest before you regain use of this feature."
+			]
+		},
+		{
+			"name": "The Loa",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Loa",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"Deals with spirits",
+				{
+					"type": "entries",
+					"name": "Expanded Spell List",
+					"entries": [
+						"The Loa lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						{
+							"type": "table",
+							"caption": "Loa Expanded Spells",
+							"colLabels": [
+								"Spell Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell hex}, {@spell unseen servant}"
+								],
+								[
+									"2nd",
+									"{@spell blindness/deafness}, {@spell hold person}"
+								],
+								[
+									"3rd",
+									"{@spell animate dead}, {@spell speak with the dead}"
+								],
+								[
+									"4th",
+									"{@spell fabricate}, {@spell polymorph}"
+								],
+								[
+									"5th",
+									"{@spell cloudkill}, {@spell contagion}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Luck of the Spirits",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Loa",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you can call on your patron to alter fate in your favor. When you make an ability check, attack roll, or a saving throw, you can use this feature to add 1d10 to your roll. You can do so after seeing the initial roll but before any of the roll’s results occur. Once you use this feature, you can not use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Voodoo Doll",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Loa",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you have learned how to imbue a doll with the likeness and essence of another creature. As an action, you can turn your voodoo doll into one that resembles a creature that you can see within 60 feet, a creature you have met and associated with for at least 30 minutes, or a creature you have observed for at least 4 hours. The voodoo doll has hit points equal to 4 times your Warlock level. While you have the voodoo doll, you have advantage on attack rolls made against that creature and advantage Wisdom (Perception) checks involving that creature. The voodoo doll ceases to function if it is farther than 1 mile from the target. You can cast spells and attack the doll as if you were attacking the creature you have targeted and any attack rolls or saving throws for damaging spells the creature would make the doll automatically fail. Non-damaging spells cast on the doll act as if the spell was cast on the creature the doll was the target of. Every time you damage the doll, the creature who it resembles makes a Constitution Saving Throw and on a failure they take full damage done to the doll, on a success they take half the damage done. The doll dissipates when its hit points drop to 0 and any excess damage is not carried over."
+			]
+		},
+		{
+			"name": "Hoodoo, Heals, and Hexes",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Loa",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, after you finish a long rest, you can take a short amount of time to construct hoodoo bags that you can expend and utilize for a number of functions. You can construct a number of bags equal to your Charisma modifier. As an action, you can use a hoodoo bag to cast the Nondetection spell without expending a spell slot, you may cast Bestow Curse without expending a spell slot, or you can heal a creature of your choice within touch range for 3d6 plus your Charisma modifier. As a bonus action, you may cast Hex as a 3rd level spell without expending a spell slot."
+			]
+		},
+		{
+			"name": "Friends from the Other Side",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Loa",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you have found a way to bring forth some of the friends you have made on the ethereal plane. As a bonus action, you can summon a number of spirits. You have 20 points to select a number of spirits to summon that equal to or less than the number of points you have.",
+				{
+					"type": "list",
+					"items": [
+						"Zombies and Skeletons = 1 point",
+						"Shadows = 2 points",
+						"Specters and Ghouls = 4 points",
+						"Will-o’-Wisps and Ghasts = 8 points",
+						"Wights = 12 points",
+						"Ghosts = 16 points",
+						"Wraiths = 20 points"
+					]
+				},
+				"On your turn you can use your action to command the spirits you summon. The spirits last for 10 minutes, or until their hit points drop to 0, after which point they disappear. Once you use this feature, you can not use this feature again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "The Void",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Void",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"Deals with the unknown",
+				{
+					"type": "entries",
+					"name": "Expanded Spell List",
+					"entries": [
+						"The Void lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						{
+							"type": "table",
+							"caption": "Void Expanded Spells",
+							"colLabels": [
+								"Spell Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell inflict wounda}, {@spell sleep}"
+								],
+								[
+									"2nd",
+									"{@spell darkness}, {@spell silence}"
+								],
+								[
+									"3rd",
+									"{@spell fear}, {@spell hunger of hadar}"
+								],
+								[
+									"4th",
+									"{@spell banishment}, {@spell otiluke's resilient sphere}"
+								],
+								[
+									"5th",
+									"{@spell antilife shell}, {@spell wall of force}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bleak Emptiness",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Void",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you can plunge a creature into an illusory realm.",
+				"As an action, choose a creature that you can see within 60 feet of you. It must make a Wisdom saving throw against your Warlock spell save DC. On a failed save, it is frightened by you for 1 minute or until your concentration is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage. Until this illusion ends, the creature thinks it is lost in the dark emptiness of the void which you can detail to your choosing. The creature can see and hear only itself, you, and the illusion. You must finish a long rest before you can use this feature again."
+			]
+		},
+		{
+			"name": "Crushing Aura",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Void",
+			"subclassSource": "WS",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain the ability to crush and stun your foes with the aura of the void as an action. When you take this action, each creature within 10 feet of you must succeed on a Constitution saving throw or be stunned until the end of your next turn. This effect also ends if the creature takes damage."
+			]
+		},
+		{
+			"name": "Crushing Force",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Void",
+			"subclassSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, you have learned how to add the crushing force of the void to your spells. When you roll a 1 or 2 on a damage die for a spell you cast that deals force damage, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2."
+			]
+		},
+		{
+			"name": "One with the Void",
+			"source": "WS",
+			"className": "Warlocke",
+			"classSource": "WS",
+			"subclassShortName": "Void",
+			"subclassSource": "WS",
+			"level": 14,
+			"entries": [
+				"At 14th level you gain the ability to transform yourself into a shadow form as a bonus action. In this form, you have resistance to all damage and immunity to force damage, and you can move through other creatures and objects as if they were difficult terrain. You take 5 force damage (ignoring any immunity) if you end your turn inside an object. You remain in this form for 1 minute or until your concentration is broken (as if you are concentrating on a spell). You can not use this feature again until you finish a short or long rest."
+			]
+		}
+	]
+}

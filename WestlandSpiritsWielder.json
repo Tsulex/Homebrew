@@ -1,0 +1,681 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Westerland Spirit Wielder",
+				"abbreviation": "WS",
+				"full": "Westerland Spirit Wielder",
+				"authors": [
+					"Tsulex"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.1.2"
+			}
+		],
+		"optionalFeatureTypes": {
+			"FS:W": "Fighting Style, Wielder"
+		},
+		"dateAdded": 1533205140,
+		"dateLastModified": 1533205140
+	},
+	"class": [
+		{
+			"name": "Wielder",
+			"source": "WS",
+			"hd": {
+				"number": 1,
+				"faces": 12
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"heavy"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"history",
+								"insight",
+								"intimidation",
+								"perception",
+								"religion",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"ballistic mail",
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and {@item shield|phb} (b) two {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}",
+					"two tomahawks",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"_": [
+							"ballistic mail"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							{
+								"equipmentType": "weaponMartial"
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"classFeatures": [
+				"Fighting Style|Wielder|WS|1",
+				{
+					"classFeature": "Wielder Archetype Feature|Wielder|WS|1",
+					"gainSubclassFeature": true
+				},
+				"Challenge|Wielder|WS|2",
+				{
+					"classFeature": "Wielder Archetype Feature|Wielder|WS|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Wielder|WS|4",
+				"Extra Attack|Wielder|WS|5",
+				"Ability Score Improvement|Wielder|WS|6",
+				"Indomitable|Wielder|WS|7",
+				"Ability Score Improvement|Wielder|WS|8",
+				{
+					"classFeature": "Wielder Archetype Feature|Wielder|WS|9",
+					"gainSubclassFeature": true
+				},
+				"Favored Weapon|Wielder|WS|10",
+				"Extra Attack (2)|Wielder|WS|11",
+				"Ability Score Improvement|Wielder|WS|12",
+				"Indomitable (2)|Wielder|WS|13",
+				"Ability Score Improvement|Wielder|WS|14",
+				{
+					"classFeature": "Wielder Archetype Feature|Wielder|WS|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Wielder|WS|16",
+				"Challenge Improvement|Wielder|WS|17",
+				"Indomitable (3)|Wielder|WS|17",
+				"Extra Attack (3)|Wielder|WS|18",
+				"Ability Score Improvement|Wielder|WS|19",
+				{
+					"classFeature": "Wielder Archetype Feature|Wielder|WS|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"subclassTitle": "WA",
+			"fluff": [
+				{
+					"name": "Wielder",
+					"type": "section",
+					"entries": [
+						"Those that follow the path of the Wielder are warriors in the most traditional sense. They cling to weapons and techniques of the old way even as time marches on around them. This does not mean that you should discount them just because their way of fighting may seem outdated because a Wielder's true strength is often not as straightforward as it would seem and they can prove quite effective even on today’s battlefields. This is because, though they seem simple at first, they exhibit true skill and mastery over their chosen areas as well as a stalwart resilience that carries them through even the most adverse situations. Not only that, but the bond they form with their weapon of choice is not something you see in the warriors of today. One thing is for sure, no matter what kind of Wielder you are facing, whether it is a Brute, Knight, or a Samurai, they are sure to give a true challenge and show what battle really means. As for what battle will consist of that depends on which path the given Wielder walks.",
+						"The Knight is a chosen defender, a vanguard that will protect all those that they deem worthy of being defended. They are immovable objects that will face any foe without falter and dispatch any that would become obstacles in the path that they have chosen. These warriors represent not only an unyielding defense but also respectable offense that nobody would dare scoff at for risk of wounding their pride and honor, and drawing their ire.",
+						"If the Knight is the Immovable then the Brute is the unstoppable force. These warriors storm into battle with very little concern, because they know that no foe could wound them enough to keep them away from a proper battle. With mighty swings and their ability to shrug off even the hardiest of blows, the Brute will certainly show why you should fear facing them and be thankful if they are on your side. If you ever do get the chance to see a Brute in battle you will surely realize that their name comes from the true brutality they are willing to inflict in a battle.",
+						"The Samurai is a mighty warrior, the same as the others, though their real power does not come from sheer strength like many wielders, but from the unnatural agility that flows through them and allows them to pull off unbelievable feats with their weaponry. In fact, the feats they perform with their weapon seem so unbelievable, others think it is just legend when they hear a samurai was able to stop bullets with their sword or even launch an attack without even touching an opponent with his weapon. A Samurai should never be underestimated, even if they are not as physically imposing as the Knight or Brute."
+					],
+					"source": "WS"
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Defense",
+			"source": "WS",
+			"featureType": [
+				"FS:W"
+			],
+			"entries": [
+				"While you are wearing armor, you gain a +1 bonus to AC."
+			]
+		},
+		{
+			"name": "Dueling",
+			"source": "WS",
+			"featureType": [
+				"FS:W"
+			],
+			"entries": [
+				"When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+			]
+		},
+		{
+			"name": "Great Weapon Fighting",
+			"source": "WS",
+			"featureType": [
+				"FS:W"
+			],
+			"entries": [
+				"When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the twohanded or versatile property for you to gain this benefit."
+			]
+		},
+		{
+			"name": "Protection",
+			"source": "WS",
+			"featureType": [
+				"FS:W"
+			],
+			"entries": [
+				"When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
+			]
+		},
+		{
+			"name": "Two-Weapon Fighting",
+			"source": "WS",
+			"featureType": [
+				"FS:W"
+			],
+			"entries": [
+				"When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Brute",
+			"shortName": "Brute",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Brute Strength|Wielder|WS|Brute|WS|1",
+				"Savage Reaction|Wielder|WS|Brute|WS|3",
+				"Fierce Grasp|Wielder|WS|Brute|WS|9",
+				"Unbreakable|Wielder|WS|Brute|WS|15",
+				"Brutality|Wielder|WS|Brute|WS|20"
+			]
+		},
+		{
+			"name": "Knight",
+			"shortName": "Knight",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Aegis at the Ready|Wielder|WS|Knight|WS|1",
+				"Vanguard|Wielder|WS|Knight|WS|3",
+				"Mounted Combatant|Wielder|WS|Knight|WS|9",
+				"Survivor|Wielder|WS|Knight|WS|15",
+				"Defender|Wielder|WS|Knight|WS|20"
+			]
+		},
+		{
+			"name": "Samurai",
+			"shortName": "Samurai",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassSource": "WS",
+			"subclassFeatures": [
+				"Samurai’s Finesse|Wielder|WS|Samurai|WS|1",
+				"Agile Maneuverability|Wielder|WS|Samurai|WS|1",
+				"Step Like the Wind|Wielder|WS|Samurai|WS|3",
+				"Deflect Missiles|Wielder|WS|Samurai|WS|9",
+				"Crescent Strike|Wielder|WS|Samurai|WS|15",
+				"Soul of Steel|Wielder|WS|Samurai|WS|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Wielder Archetype Feature",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose from Brute, Knight, Samurai, or Spellsword all detailed at the end of the class description. The archetype you choose grants you features at 1st level and again at 3rd, 9th, 15th, and 20th level."
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 1,
+			"entries": [
+				"You adopt a particular style of fighting as your specialty, Choose one of the following options. You can not take a Fighting Style option more than once, even if you later get to choose again."
+			]
+		},
+		{
+			"name": "Challenge",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you gain the ability to issue a challenge to a creature that you are already in combat with so that the fight becomes more about a personal battle between the two of you. You can issue your challenge as a bonus action and the enemy you challenge must be within 100 feet of you when you issue the challenge; you must verbally issue the challenge to the enemy. While in combat against the challenged enemy, you gain advantage on all attack rolls against the challenged enemy, and you can add 1d6 damage to your rolls of the same type of damage that your weapon deals. You and the challenged creature have disadvantage on attack rolls made against any creature other than each other, the challenge ends when the challenged enemy’s hit points drop to 0, when you finish a short or long rest, or when you end the challenge as a bonus action, by verbally declaring an end to your challenge. Once you use this feature, you can not use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Wielder Archetype Feature",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3th level, you gain a feature granted by your Wielder Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 5,
+			"entries": [
+				"At 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 6,
+			"entries": [
+				"When you reach 6th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Indomitable",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can not use this feature again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Wielder Archetype Feature",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 9,
+			"entries": [
+				"At 9th level, you gain a feature granted by your Wielder Archetype."
+			]
+		},
+		{
+			"name": "Favored Weapon",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 10,
+			"entries": [
+				"At 10th level, as a Wielder you have grown an affinity for one particular type of weapon, and as such you have learned how to use that weapon more efficiently than the other weapons in your arsenal. Pick a weapon you are proficient in (such as longsword, shortsword, halberd, etc.), while you wield that kind of weapon you have advantage on rolls against being disarmed from it and attack rolls made with that weapon are a critical hit on a roll of 19 or 20."
+			]
+		},
+		{
+			"name": "Extra Attack (2)",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 11,
+			"entries": [
+				"At 11th level, the number of attacks increases to three instead of twice, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Indomitable (2)",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 13,
+			"entries": [
+				"At 13th level, you can use this feature twice between long rests."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 14,
+			"entries": [
+				"When you reach 14th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Wielder Archetype Feature",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, you gain a feature granted by your Wielder Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Challenge Improvement",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 17,
+			"entries": [
+				"At 17th level, the damage die increases from 1d6 to 1d8."
+			]
+		},
+		{
+			"name": "Indomitable (3)",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 17,
+			"entries": [
+				"At 17th level, you can use this feature three times between long rests."
+			]
+		},
+		{
+			"name": "Extra Attack (3)",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 18,
+			"entries": [
+				"At 18th level, the number of attacks increases to four instead of three, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Wielder Archetype Feature",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, you gain a feature granted by your Wielder Archetype."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Brute Strength",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Brute",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, your might is already considerable and you can lift and break things that many normal people would not be able to. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects."
+			]
+		},
+		{
+			"name": "Savage Reaction",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Brute",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you have learned how to change targets incredibly quickly after dispatching the one you had been focusing on. When you drop an enemy’s hit points to 0, you can use your reaction to immediately move up to your speed towards an enemy and make a melee weapon attack against an enemy within range."
+			]
+		},
+		{
+			"name": "Fierce Grasp",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Brute",
+			"subclassSource": "WS",
+			"level": 9,
+			"entries": [
+				"At 9th level, you can wield a two handed weapon in one hand as long as you are not wielding a weapon in your other hand and you can use two weapon fighting even if the weapons you are using do not have the light property."
+			]
+		},
+		{
+			"name": "Unbreakable",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Brute",
+			"subclassSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, you have learned how to brace yourself properly for incoming damage. When you take damage you can instead choose to reduce the amount of damage you take by half. Once you use this feature you can not use it again until you finish a short rest or long rest."
+			]
+		},
+		{
+			"name": "Brutality",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Brute",
+			"subclassSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, you can truly start dealing out true brutality to your enemies. You can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. Additionally once per turn, when you successfully make a melee weapon attack you can choose to maximize your damage roll. Once you use this feature you can not use it again until you finish a short or long rest or until you score a critical hit."
+			]
+		},
+		{
+			"name": "Aegis at the Ready",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Knight",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you can don and doff your shield as a bonus action, instead of an action."
+			]
+		},
+		{
+			"name": "Vanguard",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Knight",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you always stand at-the-ready to attack enemies and strike them down when they come too close to you and your allies. Creatures provoke opportunity attacks from you even if they use the disengage action and when an enemy moves within your reach you can use your reaction to make an attack against them."
+			]
+		},
+		{
+			"name": "Mounted Combatant",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Knight",
+			"subclassSource": "WS",
+			"level": 9,
+			"entries": [
+				"At 9th level, you have learned how to battle on your mount much more effectively. If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. Additionally, if an enemy makes an attack roll against your mount, you can instead use your reaction to make that attack target you (it must still meet or exceed your AC to hit), and if it does hit you can halve the attack's damage."
+			]
+		},
+		{
+			"name": "Survivor",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Knight",
+			"subclassSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if your hit points are less than or equal to half of your hit point total. You do not gain this benefit if you have 0 hit points."
+			]
+		},
+		{
+			"name": "Defender",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Knight",
+			"subclassSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, you have mastered the art of reacting to everything happening on the battlefield. You can use your reaction during a round even if you have already used a reaction that round, however you may not use more than one reaction per turn. Additionally, if an enemy makes an attack against anyone other than you while they are within 5 feet of you, you can use your reaction to make an attack against them."
+			]
+		},
+		{
+			"name": "Samurai’s Finesse",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Samurai",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"While using a weapon that you are proficient in you can treat that weapon as if it had the finesse property."
+			]
+		},
+		{
+			"name": "Agile Maneuverability",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Samurai",
+			"subclassSource": "WS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you are able to move much more efficiently in armor thanks to your training. You can add half of your proficiency score to Dexterity saving throws you make. Additionally, when you wear medium armor, you can add a maximum of 3, rather than 2, to your AC if you have a Dexterity of 16 or higher. When you are wearing light armor, you have advantage on Acrobatics ability checks."
+			]
+		},
+		{
+			"name": "Step Like the Wind",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Samurai",
+			"subclassSource": "WS",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you have learned how to move more quickly in combat the less armor you are wearing. While not wearing heavy armor or using a shield, you can use the Disengage action as a bonus action, and while not while not wearing heavy armor, medium armor, or using a shield you can use the Dash action as bonus action."
+			]
+		},
+		{
+			"name": "Deflect Missiles",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Samurai",
+			"subclassSource": "WS",
+			"level": 9,
+			"entries": [
+				"At 9th level, you have learned to harness your almost inhuman reaction speed to stop enemy ranged attacks. When your enemy makes a ranged weapon attack you can use your reaction to prevent an amount of damage that would be done to you by ranged weapon attacks equal to 1d10 + your Wielder level."
+			]
+		},
+		{
+			"name": "Crescent Strike",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Samurai",
+			"subclassSource": "WS",
+			"level": 15,
+			"entries": [
+				"At 15th level, you can use your weapon to produce an attack that hits enemies even if they are not in melee range. As an action, you can use your melee weapon to slash in front of you dealing damage in a 15 feet cone (20 feet if your weapon has the reach property) and all creatures in that cone must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength or Dexterity modifier, your choice). On a failure, they take 2d10 plus your Strength or Dexterity modifier (your choice) of slashing damage, half as much on a success."
+			]
+		},
+		{
+			"name": "Soul of Steel",
+			"source": "WS",
+			"className": "Wielder",
+			"classSource": "WS",
+			"subclassShortName": "Samurai",
+			"subclassSource": "WS",
+			"level": 20,
+			"entries": [
+				"At 20th level, you have come to understand your weapon so well you can feel its spirit. Any weapons on your person can not be broken by non-magical means, and all weapon attacks you make with weapons you are proficient with count as magical for the purpose of overcoming resistance and immunity to non-magical attacks and damage. You can now also draw out your weapon’s spirit to aid you in combat. When you call out your weapon’s spirit, for the next 1 minute when you make a successful attack with your weapon, instead of rolling the weapon’s damage, you instead inflict the maximum amount of damage the weapon can do. You regain this feature when you finish a long rest."
+			]
+		}
+	]
+}
